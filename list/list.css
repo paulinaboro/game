@@ -1,0 +1,67 @@
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    margin-top: 20vh;
+    padding: 20px;
+    background-color: #5f7896;
+}
+body{
+    background-color: #7D96B4;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    justify-content: center;
+}
+
+#form_container{
+    display: flex;
+    justify-content: center;
+}
+
+form > div{
+    margin: 10px;
+}
+#submit_btn{
+    width: 100px;
+    margin: 10px;
+}
+
+#user{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+}
+
+#user > p {
+    padding: 10px;
+}
+
+#delete{
+    width: 60px;
+    height: 30px;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center;
+    align-items: center; */
+}
