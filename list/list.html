@@ -7,6 +7,7 @@
     <title>User List</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
     <div class="navbar">
@@ -36,14 +37,16 @@
                 <div id='list'></div>
                 <template id='user_template'>
                     <label for="delete">
-                        <article id='user'>
+                        <div id='user'>
+                        <article>
                             <p id='number'></p>
                             <p id='email'>email</p>
                             <p id='name'>username</p>
                             <p id='password'>password</p>
                         </article>
                     </label>
-                    <button id='delete'>Delete</button>
+                    <button id='delete'><i class="fas fa-skull-crossbones"></i></button>
+                </div>
                 </template>
             </main>
 <script src="list.js"></script>

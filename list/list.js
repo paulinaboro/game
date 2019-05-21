@@ -47,7 +47,7 @@ function makeList(newData){
     newData.forEach((user, i)=> {
         let tmpl = document.querySelector('#user_template').content;
         let tmplCopy = tmpl.cloneNode(true);
-        tmplCopy.querySelector('#number').innerHTML = [i+1];
+        tmplCopy.querySelector('#number').innerHTML = [i+1] + '.';
         tmplCopy.querySelector('#email').innerHTML = 'Email: ' + user.email;
         tmplCopy.querySelector('#name').innerHTML = 'Username: ' +user.name;
         tmplCopy.querySelector('#password').innerHTML = 'Password: ' +user.password;
@@ -56,6 +56,7 @@ function makeList(newData){
             document.querySelector('#user').style.display = 'none';
             document.querySelector('#delete').style.display = 'none';
         })
+
         document.querySelector('#list').appendChild(tmplCopy);
     });
 }
