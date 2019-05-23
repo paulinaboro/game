@@ -51,10 +51,10 @@ function makeList(newData){
         tmplCopy.querySelector('#email').innerHTML = 'Email: ' + user.email;
         tmplCopy.querySelector('#name').innerHTML = 'Username: ' +user.name;
         tmplCopy.querySelector('#password').innerHTML = 'Password: ' +user.password;
-        tmplCopy.querySelector('#delete').addEventListener('click', ()=>{
+        tmplCopy.querySelector('.delete').addEventListener('click', ()=>{
             deleteObj(user._id);
             document.querySelector('#user').style.display = 'none';
-            document.querySelector('#delete').style.display = 'none';
+            document.querySelector('.delete').style.display = 'none';
         })
 
         document.querySelector('#list').appendChild(tmplCopy);
