@@ -1,0 +1,274 @@
+.cls-100 {
+  isolation: isolate;
+}
+
+.cls-200 {
+  opacity: 0.34;
+  mix-blend-mode: multiply;
+}
+
+.cls-300 {
+  fill: #fff;
+}
+
+.cls-300,
+.cls-400 {
+  stroke: #8c6239;
+}
+
+.cls-300,
+.cls-400,
+.cls-600 {
+  stroke-miterlimit: 10;
+}
+
+.cls-400,
+.cls-600 {
+  fill: none;
+}
+
+.cls-500 {
+  fill: #670e12;
+}
+
+.cls-600 {
+  stroke: #661414;
+}
+.cls-1 {
+  fill: #d2e2df;
+}
+
+.cls-2 {
+  fill: #7ea7b0;
+}
+
+.cls-3 {
+  fill: #b2cad0;
+}
+
+.cls-4 {
+  fill: #818387;
+}
+
+.cls-5 {
+  fill: #516063;
+}
+
+.cls-6 {
+  fill: #2d3037;
+}
+
+.cls-7 {
+  fill: #3f3f40;
+}
+
+.cls-8 {
+  fill: url(#Unbenannter_Verlauf_17);
+}
+
+.cls-37,
+.cls-9 {
+  fill: #f7efc9;
+}
+
+.cls-10 {
+  fill: #1e1313;
+}
+
+.cls-11 {
+  fill: url(#Unbenannter_Verlauf_17-2);
+}
+
+.cls-12 {
+  fill: url(#Unbenannter_Verlauf_17-3);
+}
+
+.cls-13 {
+  fill: url(#Unbenannter_Verlauf_17-4);
+}
+
+.cls-14 {
+  fill: #16150f;
+}
+
+.cls-15 {
+  fill: #505f62;
+}
+
+.cls-16,
+.cls-24 {
+  fill: none;
+}
+
+.cls-16 {
+  stroke: #505f62;
+}
+
+.cls-16,
+.cls-24,
+.cls-37,
+.cls-38,
+.cls-39 {
+  stroke-miterlimit: 10;
+}
+
+.cls-17 {
+  fill: #85a6ad;
+}
+
+.cls-18 {
+  fill: #262932;
+}
+
+.cls-19 {
+  fill: #140100;
+}
+
+.cls-20 {
+  fill: #57595f;
+}
+
+.cls-21 {
+  fill: #283031;
+}
+
+.cls-22 {
+  fill: #969fa1;
+}
+
+.cls-23 {
+  fill: #170f0f;
+}
+
+.cls-24 {
+  stroke: #c7b299;
+}
+
+.cls-25 {
+  fill: #898487;
+}
+
+.cls-26 {
+  fill: #adaeb0;
+}
+
+.cls-27 {
+  fill: #e6e6e7;
+}
+
+.cls-28 {
+  fill: #dcdfe0;
+}
+
+.cls-29 {
+  fill: #b3b5b7;
+}
+
+.cls-30 {
+  fill: #5b5d62;
+}
+
+.cls-31 {
+  fill: #616265;
+}
+
+.cls-32 {
+  fill: #414244;
+}
+
+.cls-33 {
+  fill: #271112;
+}
+
+.cls-34 {
+  fill: #98b9bf;
+}
+
+.cls-35 {
+  fill: #142c46;
+}
+
+.cls-36 {
+  fill: #274a5c;
+}
+
+.cls-37 {
+  stroke: #f7efc9;
+  opacity: 0.57;
+}
+
+.cls-38 {
+  stroke: #333;
+}
+
+.cls-39 {
+  fill: #fff;
+  stroke: gray;
+}
+
+.cls-40 {
+  fill: #009173;
+}
+
+.cls-41 {
+  font-size: 60px;
+  fill: #999;
+  font-family: OpenSans-SemiBold, Open Sans;
+  font-weight: 600;
+}
+.cloud {
+  animation: moving 10s infinite alternate ease-in-out;
+}
+@keyframes moving {
+  to {
+    transform: translateX(160px);
+  }
+}
+.dragon {
+  animation: dragoning 1s infinite alternate ease-in-out;
+}
+@keyframes dragoning {
+  100% {
+    transform: translateY(30px);
+  }
+}
+#deathCounter {
+  transform: translateX(1535px);
+}
+#pointstext {
+  font-size: 300%;
+  text-shadow: black 2px 1px;
+}
+#startgamemodal {
+  background-color: white;
+  position: absolute;
+  width: 60vw;
+  height: 30vh;
+  top: 30vh;
+  left: 20vw;
+}
+#gameplaceholder {
+  transform: scale(0.9);
+}
+#badCup {
+  display: none;
+}
+#endgamemodal {
+  background-image: linear-gradient(#f3f3f3, #849bb4);
+  position: absolute;
+  width: 60vw;
+  height: 30vh;
+  top: 30vh;
+  left: 20vw;
+  display: none;
+  font-family: "Open Sans", sans-serif;
+}
+#blur {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0vh;
+  left: 0vw;
+  display: none;
+}
