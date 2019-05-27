@@ -38,7 +38,7 @@ form > div{
     margin: 10px;
 }
 
-#user{
+.user{
     display: flex;
     flex-direction: row;
     width: 500px;
