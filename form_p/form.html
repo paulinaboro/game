@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User List</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website(materialize.css) is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <div class="navbar">
+        <img src="dice.png" alt="dice">
+        <img src="spilletext.png" id='logo' alt="logo">
+    </div>
+    <main>
+    
+    <!-- <div id="form_container">
+        //MONIKAS FORM
+                <form>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id='email' required placeholder="yourname@email.com">
+                </div>
+                <div>
+                    <label for="name">Username: </label>
+                    <input type="text" name="name" id='name' required placeholder="Name">
+                </div>
+                    <div>
+                    <label for="pass">Password (5 characters minimum):</label>
+                    <input type="password" id="pass" name="password"
+                           minlength="5" required>
+                    </div>
+                    <input id='submit_btn' type="submit" value="Sign up">
+                </form>
+ </div> -->
+
+ <!-- PAULINAS FORM -->
+<form id="newForm">
+  <br>
+  
+        <h3>Blue account</h3>
+
+        <div class="row">
+            <div class="input-field inline">
+            <input name="email" id="email" type="email" class="validate" required>
+            <label for="email">E-mail*</label>
+          </div>
+        </div>
+          <div class="row">
+                <div class="input-field inline">
+                  <input name="name" id="icon_prefix" type="text" class="validate" required>
+                  <label for="icon_prefix">Name*</label>
+                </div> 
+          </div>
+                <div class="row">
+                        <div class="input-field inline">
+                          <input id="password" name="password" type="password" class="validate" minlength="5" required>
+                          <label for="password">Password*</label>
+                        </div>
+                      </div>
+                   <ul>
+                     <li>
+                     <label>
+                            <input class="checkbox" type="checkbox" required/>
+                              <span>I am over 18 year old*</span>
+                            </label></li>
+                       
+                               <li><label>
+                                       <input class="checkbox" type="checkbox" required/>
+                                         <span style="color: #26A59A">I agree to the terms and conditions*</span>
+                                       </label></li> 
+                                   
+                                           <li><label>
+                                                   <input class="checkbox" type="checkbox" required/>
+                                                     <span>I want to receive Danske Spill special deals and hear about exciting new on my email</span>
+                                                   </label>
+                                                  </li>
+                                                  </ul>
+                                               
+                                                 <input id='submit_btn' type="submit" value="Sign up">
+                                                 <p>Already have a account? <span style="color: #26A59A">Log in</span></p>
+                                                 <br>
+                                      
+                      
+            </form>
+           
+                <div id='list'></div>
+                <template id='user_template'>
+                    <label for="delete">
+                        <div id='user'>
+                        <article>
+                            <p id='number'></p>
+                            <p id='email'>email</p>
+                            <p id='name'>username</p>
+                            <p id='password'>password</p>
+                        </article>
+                    </label>
+                    <button class='delete'><i class="fas fa-skull-crossbones"></i></button>
+                </div>
+                </template>
+            </main>
+
+              <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script src="form.js"></script>
+
+</body>
+</html>

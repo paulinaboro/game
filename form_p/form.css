@@ -1,0 +1,40 @@
+body {
+  background-color: #7d96b4;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* NEW FORM STYLING  */
+
+#newForm {
+  width: 35vw;
+  background-color: white;
+  margin-left: 30vw;
+  text-align: center;
+  color: black;
+  box-shadow: 7px 9px 8px -3px rgba(171, 171, 171, 1);
+  border-radius: 5px;
+}
+
+#newForm h3 {
+  font-size: 32px;
+}
+#newForm input {
+  width: 20vw;
+}
+ul li {
+  text-align: left;
+  margin-left: 5vw;
+}
+#newForm #submit_btn {
+  height: 5vh;
+  width: 13vw;
+  background-color: #26a59a;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4%;
+}
