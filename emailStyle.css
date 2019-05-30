@@ -16,6 +16,12 @@ input{
    width: 50vw;
    border-radius: 15px; 
 }
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+    margin-left: 10px;
+}
 #iconBar{
     display: flex;
     flex-direction: row;
