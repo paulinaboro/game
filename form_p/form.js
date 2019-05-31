@@ -7,6 +7,7 @@ form.addEventListener("submit", event => {
     name: form.elements.name.value,
     password: form.elements.password.value
   };
+  post(inputData);
 });
 
 function post(submittedData) {
