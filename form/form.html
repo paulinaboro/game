@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="form.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,800|Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,800|Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>user</title>
 </head>
 <header>
     <div id='nav'>
@@ -28,9 +30,72 @@
   <p id='username'>Username</p>
 </div>
 </header>
-<body>
-    
 
+<body>
+    <div id='profile_div'>
+      <div id="side_nav">
+        <div id='username-div'>
+        <p><span><img src="img/user_photo.svg" id='username_photo1'></span>Username</p>
+        </div>
+        
+        <p class="current"><span><i class="fas fa-cog current"></i></span> Account settings</p>
+        <p><span><i class="fas fa-user"></i></span> Personal data</p>
+        <p><span><i class="fas fa-dollar-sign"></i></span> Wallet</p>
+        <p><span><i class="fas fa-heart"></i></span> Favourite games</p>
+        <p><span><i class="fas fa-trophy"></i></span> Highest scores</p>
+      </div>
+    <div id='inner_div'>
+        <!-- <div id='username-div2'>
+            <p><span><img src="img/user_photo.svg" id='username_photo2'></span>Username</p>
+            </div> -->
+            <div id="inner_div2">
+              <!-- progress bar -->
+
+              <section>
+                  <ol class="progress-bar"> 
+                    <li id='step1'class="is-active"><span>Account type</span></li>  
+                    <li id='step2'><span>Verification</span></li>
+                    <li id='step3'><span>Payment</span></li>  
+                  </ol>
+                </section>
+
+                <div id='frame1'>
+                <div id='cards'>
+                <div class="card">
+                  <h1 id='blue'>Blue</h1>
+                  <p><span ><i class="fas fa-check-circle green"></i></span>Play over 900 games</p>
+                  <p><span><i class="fas fa-times-circle red"></i></span>Invest money to win the REAL money </p>
+                  <p><span><i class="fas fa-times-circle red"></i></span>Put your username on the top scores list</p>
+                  <p class="current">*Your current type</p>
+                </div>
+                <div class="card">
+                  <h1 id='red'>Red</h1>
+                  <p><span ><i class="fas fa-check-circle green"></i></span>Play over 900 games</p>
+                  <p><span><i class="fas fa-check-circle green"></i></span>Invest money to win the REAL money </p>
+                  <p><span><i class="fas fa-check-circle green"></i></span>Put your username on the top scores list</p>
+                  <button id='choose'>Choose</button>
+                </div>
+              </div>
+            </div>
+            <div id='frame2'>
+              <h1>Age Verification</h1>
+              <p>In order to play for money you need to be over 18 years old. To be 100% sure we must verify your age using NemID </p>
+              <div id='nemid'>
+                <div id='nem_up'>
+                <img src="img/key.png" id='key'>
+                <img src="img/nemid.jpg" id='nem_logo'>
+              </div>
+              <div id='nem_inputs'>
+                <label>User ID<input type="text" placeholder="User ID"></label>
+                <label id='pass'>Password<input type="text" placeholder="Password"></label>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+<script src='https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js'></script>
    <script src="form.js"></script> 
 </body>
 </html>
