@@ -1,0 +1,156 @@
+/*
+MAIN COLOURS:
+darker blue: #849BB4;
+*/
+
+/*General CSS for both desktop and mobile starts here */ 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: #fff;
+ /*   margin: 0px 20px 0px 20px; */
+    font-size: 0.9em;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #5F7896;
+    height: 3em;
+    align-items: center;
+}
+nav a, .subNav a{
+    margin: 0px 20px 0px 20px;
+}
+.subNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #849bb4;
+}
+.subNav{
+    height: 3em;
+    align-items: center;
+}
+.spilleLogo{
+   height: 1em;
+   margin-left: 1em;
+}
+.intro{
+    background-color: #CDDDEF;
+    padding: 7em;
+    text-align: center;
+}
+h1{
+    color: #0F3C5D;
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+    color: #0F3C5D;
+}
+.benefits h2{
+    color: #fff;
+    text-align: center;
+    padding-top: 2em;
+}
+.uspBenefits{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.benefitCard{
+    min-height: 15em;
+    background-color: #0F3C5D;
+    border-radius: 50px;
+    width: 13em;
+    color: #fff;
+    padding: 1em;
+    margin: 4em 2em;
+}
+.introP{
+    color: #0F3C5D;
+    margin: 2.5em 0em 2em 0em;
+    font-size: 1.5em;
+}
+/*General rules for buttons*/
+button{
+    min-width: 8em;
+    height: 3em;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 6px;
+    margin: auto;
+    display: block;
+}
+.footerBtn{
+    background-color: #fff;
+    color: #0F3C5D;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 15em;
+    margin-top: 2em;
+    margin-left: -0.3em;
+}
+/*please delete placeholder CSS once we connect the main site with the game*/
+.placeholderGame{
+    background-image: url("images/background-game-04.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;  
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.benefits{
+    background-color: #849BB4;
+    padding: 4em;
+}
+
+.subFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5em;
+}
+.subFooter img{
+    height: 4em;
+    margin: 0.8em;
+}
+/* CSS for Mobile starts here*/
+/* CSS for Desktop starts here*/
+@media screen and (min-width: 600px) {
+    .mainFooter{
+        background-color: #849BB4;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(4, 2fr); 
+        padding: 3em 5em;
+        color: #fff;
+        font-size: 0.8em;
+    }
+    .mainFooterPart2 li, .mainFooterPart3 li{
+        list-style-type: none;
+    }
+    .mainFooterPart1{
+        grid-column: 1 / 2;
+    
+    }
+    .mainFooterPart2{
+        grid-column: 2 / 3;
+    }
+    .mainFooterPart3{
+        grid-column: 3 / 4;
+    
+    }
+    .mainFooterPart4{
+        grid-column: 4 / 5;
+    }
+}
