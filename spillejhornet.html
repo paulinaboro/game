@@ -13,13 +13,41 @@
  <header>
     <nav>
      <div class="leftNav">
-     <a href="main.html"><img src="images/danskespil-logo.png" alt="danskespil logo"></a>
+     <a href="main.html"><img class="danskeLogo" src="images/danskespil-logo.png" alt="danskespil logo"></a>
      <a href="#">More games</a>
      <a href="#">Help</a>
      </div>
      <div class="rightNav">
-     <a href="#"><img src="form/img/user.svg"></a>
-     <a href="#">Username</a>
+     <a href="/form_p/form.html">
+        <!-- SVG of the USER AVATAR clickable-->
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                    }
+              
+                    .cls-2 {
+                      fill: #26a59a;
+                    }
+              
+                    .cls-3 {
+                      fill: #d65252;
+                    }
+                  </style>
+                </defs>
+                <title>user</title>
+                <circle id="background-circle" class="cls-1" cx="20" cy="20" r="18"/>
+                <g id="iconfinder_user-alt_285645" data-name="iconfinder user-alt 285645">
+                  <path id="Path_27" data-name="Path 27" class="cls-2" d="M15.23,20a11.9,11.9,0,0,0-7,9.57,2.55,2.55,0,0,0,2.49,2.62h18.4a2.56,2.56,0,0,0,2.55-2.57v0a11.92,11.92,0,0,0-7-9.57,5.35,5.35,0,0,1-4.71,3A5.35,5.35,0,0,1,15.23,20Z"/>
+                  <path id="Path_28" data-name="Path 28" class="cls-2" d="M26.49,12.56A6.56,6.56,0,1,1,19.94,6h0a6.56,6.56,0,0,1,6.55,6.56Z"/>
+                  <path id="Path_29" data-name="Path 29" class="cls-2" d="M19.94,17.8A11.79,11.79,0,0,0,8.22,28.29a2.55,2.55,0,0,0,2.48,2.62H29.11a2.56,2.56,0,0,0,2.55-2.56v-.06A11.8,11.8,0,0,0,19.94,17.8Z"/>
+                </g>
+                <circle id="circle" class="cls-3" cx="6" cy="6" r="6"/>
+              </svg>
+              
+     </a>
+     <a id="userName" href="#">Username</a>
      </div>
 
     </nav>
@@ -31,63 +59,69 @@
         <a href="#">Regular Campaigns</a>
     </div>
  </header>
-
-    <section class="intro">
-        <img src="images/" alt="icon dice">
-        <h1>Spillejhørnet<br>Gaming & Gambling platform</h1>
-        <h2>Built for gaming, gambling and winning real money!</h2>
-        <button>Sign up for free</button>
-        
-    </section>
-
+    <main>
     <section>
-        <h2>Selected Games for you</h2>
+        <img class="mainGameImg" src="images/mainGame.png">
+    </section>
+    <section>
+        <h3 class="spilleHeader">Selected Games for you</h3>
         <div class="selectedGames">
-            <img src="" alt="game image">
-            <img src="" alt="game image">
-            <img src="" alt="game image">
+            <img class="mediumGame" src="images/game1.png" alt="game image">
+            <img class="mediumGame" src="images/game2.png" alt="game image">
+            <img class="mediumGame" src="images/game3.png" alt="game image">
+            <img class="mediumGame" src="images/game4.png" alt="game image">
+
     </section>
     <section>
-            <h2>All Games (37 games)</h2>
-            <p>Find games by</p>
-            <button>Category</button>
-            <button>Supplier</button>
-            <label>
-            <input type="text" value="Search by game name">
-            </label>
-            <h2>popular (12 games)</h2>
-            <img src="" alt="game image">
-            <img src="" alt="game image">
-            <img src="" alt="game image">
-            <img src="" alt="game image">
-            <img src="" alt="game image">
-            <img src="" alt="game image">
-            <img src="" alt="game image">
-            <img src="" alt="game image">
+            <h3 class="spilleHeader">All Games (37 games)</h3>
+            <div class="filterBar">
+             <p class="filterP">Find games by</p>
+             <button class="filterBtn">Category</button>
+             <button class="filterBtn">Supplier</button>
+             <label>
+             <input id="spilleSearch" type="text" value="Search by Game name">
+             </label>
+            </div>
+            <h3 class="spilleHeader">popular (12 games)</h3>
+            <div class="allGames">
+            <img class="mediumGame" src="images/smallGame1.png" alt="game image">
+            <img class="mediumGame" src="images/smallGame2.png" alt="game image">
+            <img class="mediumGame" src="images/smallGame3.png" alt="game image">
+            <img class="mediumGame" src="images/smallGame4.png" alt="game image">
+            <img class="mediumGame" src="images/smallGame5.png" alt="game image">
+            <img class="mediumGame" src="images/smallGame6.png" alt="game image">
+            <img class="mediumGame" src="images/smallGame7.png" alt="game image">
+            <img class="mediumGame" src="images/smallGame8.png" alt="game image">
+           </div>
     </section>
 
+   </main>
 
-    <footer>
+   <footer>
         <hr>
         <div class="mainFooter">
             <div class="mainFooterPart1">
-                <a href=""><img src="images/danskespil-logo.png" alt="danskespil logo"></a>
+                <a href=""><img class="danskeLogo" src="images/danskespil-logo.png" alt="danskespil logo"></a>
                 <p>Danske Spil A/S<br>Korsdalsvej 135<br>2605 Brøndby</p>
             </div>
             <div class="mainFooterPart2">
-                <a href="#">Operational status</a>
-                <a href="#">Terms and conditions</a>
-                <a href="#">Vegas</a>
-                <a href="#">Become a partner</a>
-                <a href="#">Responsibility</a>
-                <a href="#">Privacy policy</a>
+               <ul>
+                <li><a href="#">Operational status</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Vegas</a></li>
+                <li><a href="#">Become a partner</a></li>
+                <li><a href="#">Responsibility</a></li>
+                <li><a href="#">Privacy policy</a></li>
+               </ul>
             </div>
             <div class="mainFooterPart3">
-                <a href="#">YouBet</a>
-                <a href="#">Winning chances</a>
-                <a href="#">Cookies</a>
-                <a href="#">Game rules</a>
-                <a href="#">Kalaalisut</a>
+               <ul>
+                <li><a href="#">YouBet</a></li>
+                <li><a href="#">Winning chances</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Game rules</a></li>
+                <li><a href="#">Kalaalisut</a></li>
+               </ul>
             </div>
             <div class="mainFooterPart4">
                 <p>Contact our customer service<br>every day from 9am until 23pm</p>
@@ -102,7 +136,6 @@
             <img src="images/footer-logo4.png" alt="partner logo">
             <img src="images/footer-logo5.png" alt="partner logo">
             <img src="images/footer-logo6.png" alt="partner logo">
-
 
         </div>
     </footer>
