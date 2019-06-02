@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="../navFooter.css">
+    <link rel="stylesheet" href="card.css">
 
     <title>user</title>
 </head>
@@ -88,8 +89,8 @@
                 <img src="img/nemid.jpg" id='nem_logo'>
               </div>
               <div id='nem_inputs'>
-                <label>User ID<input type="text" placeholder="User ID"></label>
-                <label id='pass'>Password<input type="text" placeholder="Password"></label>
+                <label>User ID<input type="text" placeholder="User ID" required></label>
+                <label id='pass'>Password<input type="text" placeholder="Password" required></label>
                 <button id='accept'>Accept</button>
 
               </div>
@@ -97,23 +98,87 @@
               <button id='backBtn'>Back</button>
               </div>
             <div id='frame3'>
-                  <h1>Payment Information</h1>
-                  <div id='payContainer'>
-                  <div id='nem_inputs'>
-                    <label id=''>Card Holder<input type="text" placeholder=""></label>
-                    <label id=''>Card Number<input type="number" placeholder=""></label>
-                    <label id=''>CVV<input type="number" placeholder=""></label>
 
-                  </div>
-                  </div>
-                  <button id='backBtn2'>Back</button>
-                  <button id='save'>Save</button>
+              <div class="container">
+        <div class="paycard">
+
+    <div class="front">
+        <div class="title">Card holder name</div>
+        <input class='card_input' type="text" placeholder="Card holder name" required>
+      <div class="card-number">
+        <div class="title">Card number</div>
+        <div class="card-number__inputs">
+          <div><input class='card_input' type="text" maxlength="4" inputmode='numeric' pattern="\d+" placeholder="0000" class="card-number-input" required></div>
+          <div><input  class='card_input' type="text" maxlength="4" inputmode='numeric' pattern="\d+" placeholder="0000" class="card-number-input" required></div>
+          <div><input  class='card_input' type="text" maxlength="4" inputmode='numeric' pattern="\d+" placeholder="0000" class="card-number-input" required></div>
+          <div><input  class='card_input' type="text" maxlength="4" inputmode='numeric' pattern="\d+" placeholder="0000" class="card-number-input" required></div>
+        </div>
+      </div>
+
+      <div class="card-date">
+        <div class="title">Valid thru</div>
+        <div class="card-date__inputs">
+          <div><input  class='card_input' type="text" maxlength="2" inputmode='numeric' pattern="\d+" placeholder="00" class="card-date-input" required></div>
+          <div class="divider">/</div>
+          <div><input  class='card_input' type="text" maxlength="2" inputmode='numeric' pattern="\d+" placeholder="00" class="card-date-input" required></div>
+        </div>
+      </div>
+      <button id="btn_back" class="btn-back">
+            <svg version='1.1' x='0px' y='0px'
+            viewBox='0 0 490.4 490.4' fill='#ffffff' xml:space='preserve'><g><g><path d='M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5 c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z'/>
+            <path d='M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9	c4.8-4.8,4.8-12.5,0-17.3l-68.9-68.9c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l48,48H138.7c-6.8,0-12.3,5.5-12.3,12.3	C126.4,252.1,131.9,257.5,138.7,257.5z'/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          </button>
+      <div class="card-brand">
+      <svg class="card__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.39 86.9">
+        <g class="a"><rect class="b" width="131.39" height="86.9"/></g>
+        <rect class="c" x="48.37" y="15.14" width="34.66" height="56.61"/>
+        <path class="d" d="M51.94,43.45a35.94,35.94,0,0,1,13.75-28.3,36,36,0,1,0,0,56.61A35.94,35.94,0,0,1,51.94,43.45Z"/>
+        <path class="e" d="M120.5,65.76V64.6H121v-.24h-1.19v.24h.47v1.16Zm2.31,0v-1.4h-.36l-.42,1-.42-1h-.36v1.4h.26V64.7l.39.91h.27l.39-.91v1.06Z"/>
+        <path class="e" d="M123.94,43.45a36,36,0,0,1-58.25,28.3,36,36,0,0,0,0-56.61,36,36,0,0,1,58.25,28.3Z"/></svg>
+          </div>
+    </div>
+
+
+
+
+                <div class="back">
+      
+                        <button id="btn_front" class="btn-back">
+                          <svg version='1.1' x='0px' y='0px'
+                          viewBox='0 0 490.4 490.4' fill='#ffffff' xml:space='preserve'><g><g><path d='M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5 c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z'/>
+                          <path d='M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9	c4.8-4.8,4.8-12.5,0-17.3l-68.9-68.9c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l48,48H138.7c-6.8,0-12.3,5.5-12.3,12.3	C126.4,252.1,131.9,257.5,138.7,257.5z'/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        </button>
+                  
+                        <div class="card-cvc">
+                          <div class="title">CVC</div>
+                          <div class="card-cvc__input">
+                            <div><input  class='card_input' type="text" maxlength="3" inputmode='numeric' pattern="\d+" placeholder="000" class="card-cvc-input" required></div>
+                          </div>
+                        </div>
+                  
+                        <div class="card-actions">
+                          <button id="card-submit" class="card-submit">Submit</button>
+                        </div>
+                  
+                  
+                      </div>
+                    </div>
+                    <button id='backBtn2'>back</button>
+    </div>
 
                   </div>
             </div>
           </div>
     </div>
     </div>
+
+
+
+
+
+
+
+
     <footer>
         <hr>
         <div class="mainFooter">
@@ -156,7 +221,7 @@
 
         </div>
     </footer>
-<script src='https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js'></script>
+    <script src="card.js"></script>
    <script src="form.js"></script> 
 </body>
 </html>
