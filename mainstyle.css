@@ -16,7 +16,11 @@ yellow: #FEB700;
     font-family: "Open Sans", sans-serif;
     
 }
-
+/* CSS FOR THE FACEBOOK SITE */
+#facebookMockup{
+    width: 100vw;
+    height: auto;
+}
 .intro{
     background-color: #CDDDEF;
     padding: 7em;
