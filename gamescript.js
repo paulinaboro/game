@@ -1,13 +1,24 @@
 //loading DOM
-window.addEventListener("DOMContentLoaded", loadModalOne);
+window.addEventListener("DOMContentLoaded", loadSVG);
+
+function loadSVG() {
+  fetch("background1.svg")
+    .then(response => response.text())
+    .then(svgData => {
+      document
+        .querySelector("#gameplaceholder")
+        .insertAdjacentHTML("beforeend", svgData);
+    });
+  loadModalOne();
+}
 
 function loadModalOne() {
-  fetch("modal1.svg")
+  fetch("modals.svg")
     .then(response => response.text())
     .then(svgData => {
       document
         .querySelector("#startone")
-        .insertAdjacentHTML("afterbegin", svgData);
+        .insertAdjacentHTML("beforeend", svgData);
       //starting everything on click of the start
       document
         .querySelector("#startone")
@@ -17,30 +28,21 @@ function loadModalOne() {
 function loadModalTwo() {
   document.querySelector("#startone").style.display = "none";
   document.querySelector("#starttwo").style.display = "block";
-  fetch("modal2.svg")
+  fetch("modals2.svg")
     .then(response => response.text())
     .then(svgData => {
       document
         .querySelector("#starttwo")
         .insertAdjacentHTML("afterbegin", svgData);
 
-      document.querySelector("#starttwo").addEventListener("click", loadSVG);
-    });
-}
-function loadSVG() {
-  document.querySelector("#starttwo").style.display = "none";
-  fetch("background1.svg")
-    .then(response => response.text())
-    .then(svgData => {
-      document
-        .querySelector("#gameplaceholder")
-        .insertAdjacentHTML("afterbegin", svgData);
-      //starting everything on click of the start
-      gameStart();
+      document.querySelector("#starttwo").addEventListener("click", gameStart);
     });
 }
 
 function gameStart() {
+  document.querySelector("#starttwo").style.display = "none";
+  document.querySelector("#blur2").style.display = "none";
+  document.querySelector("#backgroundmodal").style.display = "none";
   console.log("greencup");
   //hiding the modal
   catching();
@@ -53,20 +55,34 @@ function catching() {
   let speed = 3000;
   let killedCups = [];
   let counter = 0;
+  let timertodeath;
+
+  //music on
+  document.querySelector("#music").play();
   //enhancing speed and adding points on the Good Cup click
   GoodCup.addEventListener("click", () => {
-    //here we are changing the text for pointer counter
+    //points adding sound
+    document.querySelector("#good").play();
+    //here we are changing the text for pointer counter and the button and the end modal
     counter++;
     let pointCounter = document.querySelector("#pointstext");
     pointCounter.textContent = `${counter} points`;
+    document.querySelector(
+      "#congratulations"
+    ).innerHTML = `You earned ${counter} points!<br\> Exchange them to ${counter}dkk now!`;
+    document.querySelector(
+      "#formbutton"
+    ).innerHTML = `Get your ${counter} dkk now!`;
     speed = speed - 80;
     //to speed up we have to clear the existing interval and turn it on again with the new speed
     clearInterval(intv);
-    intv = setInterval(moveCup, speed, GoodCup);
     //turning the game with some timeout
+    clearTimeout(timertodeath);
+    //the point appears
+    document.querySelector("#onepoint").classList.add("animatingpoints");
     setTimeout(function() {
-      endGame(counter);
-    }, 20000);
+      document.querySelector("#onepoint").classList.remove("animatingpoints");
+    }, 600);
     //if the counter is divisible by 3, we clone the BadCup all over and append it to the background
     if (counter % 3 === 0) {
       let clone = BadCup.cloneNode(true);
@@ -77,6 +93,9 @@ function catching() {
 
   //value for setting the interval with a certain speed to the moving
   moveCup(GoodCup);
+  timertodeath = setTimeout(function() {
+    endGame(counter);
+  }, 40000);
   int = setInterval(moveCup, speed, GoodCup);
   //now introducing the bad cup
 }
@@ -98,8 +117,14 @@ function badCupFunctionality(killedCups, clone, counter) {
     //instead of counting clicks we have to create the array and pushed every clicked clone into that. it's because
     //the counter gets reseted with every clone, because it is counting a click to this particular clone, not globally
     killedCups.push(clone);
-    clone.style.display = "none";
 
+    clone.querySelector("#thex").classList.add("animatingpoints");
+    setTimeout(function() {
+      clone.style.display = "none";
+    }, 800);
+    //bad points sound effect
+    document.querySelector("#bad").play();
+    document.querySelector("#nope").play();
     //here I am finding all the "x" in the svg, they have data id but it's just because I was playing with that, could
     //be just a class or whatever, anyway all of them are now an array of strikes and the index number of the array
     //should equal to the amount of the killed cups minus one. because index numbers of arrays start from 0 and number of
@@ -115,9 +140,12 @@ function badCupFunctionality(killedCups, clone, counter) {
 }
 
 function endGame(counter) {
+  //also enough of the got music
+  document.querySelector("#music").pause();
   document.querySelector("#blur").style.display = "block";
   document.querySelector("#endgamemodal").style.display = "block";
-  document.querySelector(
-    "#congratulations"
-  ).textContent = `You earned ${counter} points! Exchange them to ${counter}dkk now!`;
+  //replay functionality
+  document.querySelector("#replay").addEventListener("click", () => {
+    location.reload();
+  });
 }
