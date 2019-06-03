@@ -24,12 +24,24 @@ function post(submittedData){
        })
          .then(e => e.json())
          .then(data=>{
-             console.log(data)
-             get(data)
+            //  console.log(data.list[0].field)
+             get(data);
+
+             if(data){
+                 makeAlert(data)}
          })
    } get();
 
+   function makeAlert(data){
+       console.log('hi')
+       console.log(data);
+       if (data.list[0].message[0] === 'Already exists'){
+           alert('Email ' + data.list[0].message[0])
+            } else {
+                alert(data.list[0].message[0])
 
+            }
+}
    function get(){
     fetch('https://examproject-f5d5.restdb.io/rest/signups',{
     method: 'get',
@@ -46,7 +58,6 @@ function post(submittedData){
 
 function makeList(newData){
     document.querySelector('#list').innerHTML = '';
-    console.log(newData);
     newData.forEach((user, i)=> {
         let tmpl = document.querySelector('#user_template').content;
         let tmplCopy = tmpl.cloneNode(true);
