@@ -147,6 +147,7 @@ body{
 }
 
 .card{
+    padding: 4%;
     width: 40%;
     height: 100%;
     background-color: white;
@@ -166,7 +167,6 @@ body{
 }
 
 .card > p {
-    width: 70%;
     font-size: 13px;
     text-align: left;
 }
@@ -174,9 +174,14 @@ body{
 
 #blue{
     color: #2A7AB5;
+    grid-area: blue;
+    text-align: center;
+
 }
 #red{
     color: #D65252;
+    grid-area: red;
+    text-align: center;
 }
 
 .green{
@@ -252,7 +257,7 @@ body{
     align-items: center; 
     border-radius: 10px;
     border: 1px solid #26A59A;
-
+    
 }
 
 #nem_up, #nem_inputs{
@@ -286,7 +291,7 @@ body{
 }
 
 #frame2 > h1{
- font-size: 20px;
+    font-size: 20px;
 }
 #frame2 > p{
     font-size: 13px;
@@ -294,6 +299,70 @@ body{
     padding-right: 20%;
 }
 
+#icon_grid1{
+    grid-area: icon1;
+}
+#icon_grid2{
+    grid-area: icon2
+}
+#icon_grid3{
+    grid-area: icon3
+}
+#p_grid1{
+    grid-area: p1;
+}
+#p_grid2{
+    grid-area: p2;
+    
+}
+#p_grid3{
+    grid-area: p3;
+    
+}
+#current_grid{
+    grid-area: current_grid;
+
+    
+}
+#card1{
+    display: grid;
+    grid-template-areas: 'blue blue' 'icon1 p1' 'icon2 p2' 'icon3 p3' 'current_grid current_grid' ;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 5fr;
+    justify-items: center;
+}
+
+#icon1_grid2{
+    grid-area: icon21;
+}
+#icon2_grid2{
+    grid-area: icon22;
+}
+#icon3_grid2{
+    grid-area: icon23;
+}
+#p1_grid2{
+    grid-area: p21;
+}
+#p2_grid2{
+    grid-area: p22;
+}
+#p3_grid2{
+    grid-area: p23;
+}
+
+#choose{
+    grid-area: btn;
+    
+}
+#card2{
+    display: grid;
+    grid-template-areas: 'red red' 'icon21 p21' 'icon22 p22' 'icon23 p23' 'btn btn' ;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 5fr;
+    justify-items: center;
+    
+}
 
 /* progress bar https://codepen.io/peruvianidol/pen/NLMvqO?page=2&fbclid=IwAR2m6DiD2ZYSh5VUVp6tmH97fjIToKZBEpQEdwr0_wTsPdRpxmU6Jx0tDcI */
 section{
