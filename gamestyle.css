@@ -1,53 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+
 .cls-1mm2 {
-  opacity: 0.34;
-}
-
-.cls-1mm2,
-.cls-7mm2,
-.cls-8mm2 {
-  isolation: isolate;
-}
-
-.cls-2mm2 {
-  stroke: #333;
+  fill: #feb700;
 }
 
 .cls-2mm2,
-.cls-3mm2,
-.cls-4mm2 {
+.cls-4mm2,
+.cls-9mm2 {
+  fill: none;
+}
+
+.cls-2mm2 {
+  stroke: #fab60f;
+}
+
+.cls-12mm2,
+.cls-2mm2,
+.cls-4mm2,
+.cls-6mm2,
+.cls-7mm2,
+.cls-8mm2 {
   stroke-miterlimit: 10;
 }
 
 .cls-3mm2 {
+  fill: #fab60f;
+}
+
+.cls-4mm2 {
+  stroke: #feb700;
+}
+
+.cls-5mm2 {
+  opacity: 0.34;
+}
+
+.cls-11mm2,
+.cls-5mm2 {
+  isolation: isolate;
+}
+
+.cls-6mm2 {
+  stroke: #333;
+}
+
+.cls-7mm2 {
   fill: #fff;
   stroke: #a67c52;
 }
 
-.cls-4mm2,
+.cls-12mm2,
 .cls-8mm2 {
   fill: red;
 }
 
-.cls-4mm2,
-.cls-5mm2 {
+.cls-8mm2,
+.cls-9mm2 {
   stroke: #fff;
 }
 
-.cls-5mm2 {
-  fill: none;
+.cls-9mm2 {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 4px;
 }
 
-.cls-6mm2 {
+.cls-10mm2 {
   fill-rule: evenodd;
 }
 
-.cls-8mm2 {
-  font-size: 200.36px;
-  font-family: Dosis-Bold, Dosis;
-  font-weight: 700;
+.cls-12mm2 {
+  stroke: red;
+  stroke-width: 5px;
+}
+.cls-1mf {
+  isolation: isolate;
+}
+
+.cls-2mf {
+  fill: #feb700;
+}
+
+.cls-13mf,
+.cls-15mf,
+.cls-3mf,
+.cls-5mf {
+  fill: none;
+}
+
+.cls-3mf {
+  stroke: #fab60f;
+}
+
+.cls-10mf,
+.cls-11mf,
+.cls-13mf,
+.cls-3mf,
+.cls-5mf,
+.cls-7mf,
+.cls-8mf {
+  stroke-miterlimit: 10;
+}
+
+.cls-4mf {
+  fill: #fab60f;
+}
+
+.cls-5mf {
+  stroke: #feb700;
+}
+
+.cls-6mf {
+  opacity: 0.34;
+  mix-blend-mode: multiply;
+}
+
+.cls-10mf,
+.cls-7mf {
+  stroke: #333;
+}
+
+.cls-7mf,
+.cls-8mf {
+  stroke-width: 0.65px;
+}
+
+.cls-11mf,
+.cls-8mf {
+  fill: #fff;
+  stroke: #a67c52;
+}
+
+.cls-9mf {
+  fill: #009173;
+}
+
+.cls-10mf,
+.cls-11mf {
+  stroke-width: 0.25px;
+}
+
+.cls-12mf {
+  fill-rule: evenodd;
+}
+
+.cls-13mf {
+  stroke: #009173;
+  stroke-width: 2px;
+}
+
+.cls-14mf {
+  fill: #17ab13;
 }
 .cls-1t {
   isolation: isolate;
@@ -406,6 +509,7 @@
 }
 #deathCounter {
   transform: translateX(1535px);
+  cursor: pointer;
 }
 #pointstext {
   font-size: 300%;
@@ -413,18 +517,22 @@
 }
 #gameplaceholder {
   transform: scale(0.9);
+  position: relative;
 }
 #badCup {
   display: none;
 }
 #endgamemodal {
-  background-image: linear-gradient(#f3f3f3, #849bb4);
+  background-image: linear-gradient(#f3f3f3, #ffffff);
+  border: 1px solid #26a59a;
+  border-radius: 8px;
   position: absolute;
-  width: 60vw;
-  height: 30vh;
-  top: 30vh;
-  left: 20vw;
+  width: 50vw;
+  height: 60vh;
+  top: 15vh;
+  left: 25vw;
   display: none;
+  text-align: center;
   font-family: "Open Sans", sans-serif;
 }
 #blur {
@@ -438,17 +546,37 @@
 }
 #CupForCounting {
   transition: all 0.3s;
+  z-index: 8;
+  cursor: pointer;
 }
 
+#backgroundmodal {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.77);
+  width: 100vw;
+  height: 40%;
+  top: 30%;
+  left: 0vw;
+}
 #startone {
-  transform: scale(0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0;
+  transform: scale(0.6) translateY(-200px);
 }
 #starttwo {
   display: none;
-  transform: scale(0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0;
+  transform: scale(0.6) translateY(-200px);
 }
-#firststep {
-  transform: translateX(200);
+#numberone {
+  transform: translate(230px, -60px);
 }
 
 .finger {
@@ -480,7 +608,7 @@
 }
 @keyframes adding {
   to {
-    opacity: 0;
+    opacity: 1;
   }
 }
 #Shape,
@@ -492,6 +620,76 @@
 }
 @keyframes rotatingx {
   to {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
+}
+#onepoint {
+  opacity: 0;
+  transform: translate(-230px, -23px) scale(1.4);
+}
+#thex {
+  opacity: 0;
+  transform: translate(-374px, -120px);
+}
+.animatingpoints {
+  animation: adding 0.6s infinite ease-in-out;
+}
+#blur2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0vh;
+  left: 0vw;
+}
+.instruction {
+  font-size: 300%;
+  position: absolute;
+  padding-top: 46%;
+  left: 0%;
+  width: 100%;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  color: #009173;
+  text-align: center;
+}
+#congratulations {
+  font-size: 200%;
+  text-shadow: lightgrey 0px 3px 6px;
+}
+#youremail {
+  font-size: 80%;
+}
+#emailgameinput {
+  left: 30%;
+  width: 20em;
+  height: 3em;
+  border: #feb700 0.6em solid;
+}
+#donttouchthecup {
+  color: red;
+  top: 96%;
+  padding-top: 0%;
+}
+#formbutton {
+  width: 11.8em;
+  height: 2.2em;
+  border: none;
+  background-color: #feb700;
+  margin-top: 1vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18pt;
+}
+#nospam {
+  text-align: left;
+  margin-left: 30%;
+  font-size: 80%;
+}
+#replay {
+  text-align: left;
+  margin-left: -6%;
+  font-size: 80%;
+  background-color: none;
+  border: none;
+  cursor: pointer;
 }

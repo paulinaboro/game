@@ -8,25 +8,45 @@
     <link rel="stylesheet" type="text/css" href="gamestyle.css" />
   </head>
   <body>
-    <div id="startone"></div>
-    <div id="starttwo"></div>
     <div id="gameplaceholder">
+      <div id="blur2"></div>
+      <div id="backgroundmodal"></div>
+      <div id="startone">
+        <p class="instruction" id="collectthecup">
+          Collect the green cup before it moves
+        </p>
+      </div>
+      <div id="starttwo">
+        <p class="instruction" id="donttouchthecup">Don't touch the red cup</p>
+      </div>
       <div id="blur"></div>
       <div id="endgamemodal">
         <p id="congratulations">
           Congratulations! You earned all the fucking points in the world, now
           you can go fuck yourself!
         </p>
-        <div id="gradientinput">
-          <input type="text" />
-        </div>
+        <p id="youremail">Enter e-mail address to get your <b>money</b></p>
+        <input id="emailgameinput" type="text" /><br />
+
         <button id="formbutton">Get your money!</button>
         <p id="nospam">No spam, promise</p>
-        <button id="replay">
-          No, thank you, I don't want to get my real money
-        </button>
+        <a id="replay">
+          No, thanks, I don't want to get real money
+        </a>
       </div>
     </div>
+    <audio id="nope">
+      <source src="nope.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="music">
+      <source src="gotmusic.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="good">
+      <source src="good.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="bad">
+      <source src="bad.mp3" type="audio/mp3" />
+    </audio>
     <script src="gamescript.js"></script>
   </body>
 </html>
