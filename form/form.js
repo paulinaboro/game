@@ -61,12 +61,10 @@ function screenTest(e) {
     document.querySelector("#side_nav").classList.add("hidden");
     document.querySelector("#frame1").classList.add("hidden");
     document.querySelector("#inner_div").classList.add("hidden");
-    document.body.style.backgroundColor = "red";
   } else {
     /* the viewport is more than than 600 pixels wide */
     // para.textContent = "This is a wide screen — more than 600px wide.";
     console.log("desktop");
-    document.body.style.backgroundColor = "green";
   }
 }
 mql.addListener(screenTest);
