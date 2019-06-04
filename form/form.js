@@ -1,57 +1,53 @@
 window.addEventListener("DOMContentLoaded", init);
 
-function init() {
-  document.querySelector("#choose").addEventListener("click", () => {
-    document.querySelector("#frame1").style.display = "none";
-    document.querySelector("#step2").classList.add("is-active");
-    document.querySelector("#step1").classList.remove("is-active");
-    document.querySelector("#step1").classList.add("is-complete");
-    document.querySelector("#frame2").style.display = "flex";
-  });
-  document.querySelector("#backBtn").addEventListener("click", () => {
-    document.querySelector("#frame1").style.display = "flex";
-    document.querySelector("#step2").classList.remove("is-active");
-    document.querySelector("#step2").classList.remove("is-complete");
-    document.querySelector("#step1").classList.add("is-active");
-    document.querySelector("#step1").classList.remove("is-complete");
-    document.querySelector("#frame2").style.display = "none";
-  });
-  document.querySelector("#accept").addEventListener("click", () => {
-    document.querySelector("#frame2").style.display = "none";
-    document.querySelector("#frame3").style.display = "flex";
-    document.querySelector("#step3").classList.add("is-active");
-    document.querySelector("#step2").classList.remove("is-active");
-    document.querySelector("#step2").classList.add("is-complete");
-  });
-  document.querySelector("#backBtn2").addEventListener("click", () => {
-    document.querySelector("#frame2").style.display = "flex";
-    document.querySelector("#frame3").style.display = "none";
-    document.querySelector("#step3").classList.remove("is-active");
-    document.querySelector("#step2").classList.add("is-active");
-    document.querySelector("#step1").classList.add("is-complete");
-  });
-}
-const save = document.querySelector("#save");
+function init(){
+    document.querySelector('#choose').addEventListener('click', () => {
+        document.querySelector('#frame1').style.display = 'none';
+        document.querySelector('#step2').classList.add("is-active");
+        document.querySelector('#step1').classList.remove('is-active');
+        document.querySelector('#step1').classList.add('is-complete');
+        document.querySelector('#frame2').style.display = 'flex';
+    })
+    document.querySelector('#backBtn').addEventListener('click', () => {
+        document.querySelector('#frame1').style.display = 'flex';
+        document.querySelector('#step2').classList.remove("is-active");
+        document.querySelector('#step2').classList.remove("is-complete");
+        document.querySelector('#step1').classList.add('is-active');
+        document.querySelector('#step1').classList.remove('is-complete');
+        document.querySelector('#frame2').style.display = 'none';
+    })
+    document.querySelector('#accept').addEventListener('click', () => {
+        document.querySelector('#frame2').style.display = 'none';
+        document.querySelector('#frame3').style.display = 'flex';
+        document.querySelector('#step3').classList.add("is-active");
+        document.querySelector('#step2').classList.remove("is-active");
+        document.querySelector('#step2').classList.add('is-complete');
+    })
+    document.querySelector('#backBtn2').addEventListener('click', () => {
+        document.querySelector('#frame2').style.display = 'flex';
+        document.querySelector('#frame3').style.display = 'none';
+        document.querySelector('#step3').classList.remove("is-active");
+        document.querySelector('#step2').classList.add('is-active');
+        document.querySelector('#step1').classList.add('is-complete');
+    })
 
-function getData() {
-  save.addEventListener("submit", event => {
+}
+const save = document.querySelector('#save');
+
+function getData(){
+save.addEventListener('submit', (event) => {
     event.preventDefault();
 
     // get function coming here
     postData();
-  });
+})
 }
-function postData() {
-  const postUser = JSON.stringify();
+function postData(){
+    const postUser = JSON.stringify();
 
-  // post function coming here
-}
+        // post function coming here
 
-// Adding functionality for the mobile queries
-
-// Adding the class hidden for some elements when media queries for mobile are applied
-let mql = window.matchMedia("(max-width: 500px)");
-
+<<<<<<< HEAD
 function screenTest(e) {
   if (e.matches) {
     /* the viewport is 500 pixels wide or less */
@@ -66,15 +62,7 @@ function screenTest(e) {
     // para.textContent = "This is a wide screen — more than 600px wide.";
     console.log("desktop");
   }
+=======
+>>>>>>> parent of b7493e0... Added media queries for the main form-not finished yet
 }
-mql.addListener(screenTest);
 
-document
-  .querySelector("#accountSettings")
-  .addEventListener("click", function() {
-    console.log("works");
-    document.querySelector("#frame0Wrapper").classList.add("hidden");
-    document.querySelector("#side_nav").classList.add("hidden");
-    document.querySelector("#frame1").style.display = "block";
-    document.querySelector("#inner_div").style.display = "block";
-  });

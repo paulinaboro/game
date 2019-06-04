@@ -1,72 +1,140 @@
 /* Header */
 header {
-  height: 50px;
-  background-color: #5f7896;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  font-family: "roboto", sans-serif;
+    height: 50px;
+    background-color: #5F7896;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'roboto', sans-serif;
+
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
+a{
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
 }
-body {
-  margin: 0;
-  background-color: #849bb4;
-  font-family: roboto, sans-serif;
+body{
+    margin: 0;
+    background-color: #849BB4;
+    font-family: roboto, sans-serif;
+
+
 }
-#danske_logo {
-  height: 50px;
-  padding-right: 60px;
+#danske_logo{
+    height: 50px;
+    padding-right: 60px;
 }
 
-#nav {
-  display: flex;
-  align-items: center;
+#nav{
+    display: flex;
+    align-items: center;
 }
 
 .cls-1 {
-  fill: #fff;
+    fill: #fff;
+  }
+
+  .cls-2 {
+    fill: #26a59a;
+  }
+
+  .cls-3 {
+    fill: #d65252;
+  }
+
+  #user{
+      height: 40px;
+  }
+
+  #user-div{
+    display: flex;
+  }
+
+  #username{
+      padding-left: 25px;
+      padding-right: 25px;
+
+  }
+
+  #profile_div{
+    background-color: #0F3C5D;
+    width: 80vw;
+    height: 85vh;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+  }
+
+  #inner_div{
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    color: #0F3C5D;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+#side_nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
 }
 
-.cls-2 {
-  fill: #26a59a;
+.current{
+    color: #26A59A;
 }
 
-.cls-3 {
-  fill: #d65252;
+#side_nav > * {
+    padding: 5px;
+    font-weight: 300;
 }
 
-#user {
-  height: 40px;
+#username-div{
+    display: flex;
 }
 
-#user-div {
-  display: flex;
+#username_photo2{
+    width: 100px;
+    padding-right: 20px;
 }
 
-#username {
-  padding-left: 25px;
-  padding-right: 25px;
+
+
+#username-div2 > p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+    height: auto;
 }
 
-#profile_div {
-  background-color: #0f3c5d;
-  width: 80vw;
-  height: 85vh;
-  margin-top: 5vh;
-  margin-left: 10vw;
-  border-radius: 20px;
-  display: flex;
-  justify-content: flex-end;
-  color: white;
+#inner_div2{
+    background-color: #F7F7F7;
+    width: 80%;
+    height: 90%;
+    border-radius: 27px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #inner_div {
   width: 80%;
@@ -94,15 +162,35 @@ body {
     justify-content: space-between;
     box-shadow: -5px 11px 21px -6px rgba(199,193,199,1);
 >>>>>>> 7c1d99896c285fe09e840a8d6f6e8b4e0a8940fe
+=======
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+>>>>>>> parent of b7493e0... Added media queries for the main form-not finished yet
 }
 
-#side_nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 10px;
+.card{
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -5px 11px 21px -6px rgba(199,193,199,1);
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .current {
   color: #26a59a;
@@ -129,180 +217,66 @@ body {
     grid-area: red;
     text-align: center;
 >>>>>>> 7c1d99896c285fe09e840a8d6f6e8b4e0a8940fe
-}
-
-#username-div {
-  display: flex;
-}
-
-#username_photo2 {
-  width: 100px;
-  padding-right: 20px;
-}
-
-#username-div2 > p {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 0;
-  height: auto;
-}
-
-#inner_div2 {
-  background-color: #f7f7f7;
-  width: 80%;
-  height: 90%;
-  border-radius: 27px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#cards {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 80%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-}
-
-.card {
-  width: 40%;
-  height: 100%;
-  background-color: white;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: -5px 11px 21px -6px rgba(199, 193, 199, 1);
-}
-
-.card > h1 {
-  font-family: "Dosis", sans-serif;
-  margin-bottom: 5px;
+=======
+.card > h1{
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 5px;
 }
 
 .card > p {
-  width: 70%;
-  font-size: 13px;
-  text-align: left;
+    width: 70%;
+    font-size: 13px;
+    text-align: left;
+>>>>>>> parent of b7493e0... Added media queries for the main form-not finished yet
 }
 
-#blue {
-  color: #2a7ab5;
+
+#blue{
+    color: #2A7AB5;
 }
-#red {
-  color: #d65252;
+#red{
+    color: #D65252;
 }
 
-.green {
-  color: #9bef90;
-  font-size: 20px;
-  padding-right: 5px;
+.green{
+    color: #9BEF90;
+    font-size: 20px;
+    padding-right: 5px;
 }
 
-.red {
-  color: #fd4343;
-  font-size: 20px;
-  padding-right: 5px;
+.red{
+    color: #FD4343;
+    font-size: 20px;
+    padding-right: 5px;
 }
 
-#choose,
-#save {
-  height: 40px;
-  width: 130px;
-  border-radius: 13px;
-  background-color: #26a59a;
-  color: white;
-  border: none;
-  margin-bottom: 10px;
+#choose, #save{
+    height: 40px;
+    width: 130px;
+    border-radius: 13px;
+    background-color: #26A59A;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
 }
-#accept {
-  height: 25px;
-  width: 100px;
-  background-color: #26a59a;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  margin-bottom: 150px;
-}
-
-#frame1 {
-  height: 100%;
-  display: flex;
-  align-items: center;
+#accept{
+    height: 25px;
+    width: 100px;
+    background-color: #26A59A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 150px;
 }
 
-#frame2 {
-  display: none;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#frame3 {
-  display: none;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#backBtn,
-#backBtn2 {
-  height: 40px;
-  width: 100px;
-  border-radius: 13px;
-  background-color: #fff;
-  color: #26a59a;
-  border: 1px solid #26a59a;
-  margin-bottom: 10px;
-  align-self: flex-start;
-  margin-left: 40px;
-}
-
-#nemid {
-  width: 40%;
-  height: 60%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  border: 1px solid #26a59a;
-}
-
-#nem_up,
-#nem_inputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#key {
-  width: 60px;
-}
-#nem_logo {
-  width: 100px;
-}
-
-#nem_inputs > label {
-  display: flex;
-  flex-direction: column;
+#frame1{
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 #pass {
   padding-bottom: 50%;
   padding-top: 20px;
@@ -331,41 +305,62 @@ body {
     border: 1px solid #26A59A;
     
 >>>>>>> 7c1d99896c285fe09e840a8d6f6e8b4e0a8940fe
+=======
+#frame2{
+    display: none;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+>>>>>>> parent of b7493e0... Added media queries for the main form-not finished yet
 }
-#payContainer {
-  background-color: #26a59a;
-  border-radius: 15px;
-  width: 300px;
-  height: 200px;
+#frame3{
+    display: none;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-#frame2 > h1 {
-  font-size: 20px;
-}
-#frame2 > p {
-  font-size: 13px;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-/* progress bar https://codepen.io/peruvianidol/pen/NLMvqO?page=2&fbclid=IwAR2m6DiD2ZYSh5VUVp6tmH97fjIToKZBEpQEdwr0_wTsPdRpxmU6Jx0tDcI */
-section {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-}
-:root {
-  --color-white: #fff;
-  --color-black: #333;
-  --color-gray: #75787b;
-  --color-gray-light: #bbb;
-  --color-gray-disabled: #e8e8e8;
-  --color-green: #9bef90;
-  --color-green-dark: #383;
-  --font-size-small: 0.75rem;
-  --font-size-default: 0.875rem;
+#backBtn, #backBtn2{
+    height: 40px;
+    width: 100px;
+    border-radius: 13px;
+    background-color: #fff;
+    color: #26A59A;
+    border: 1px solid #26A59A;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    margin-left: 40px;
 }
 
+#nemid{
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    border-radius: 10px;
+    border: 1px solid #26A59A;
+
+}
+
+#nem_up, #nem_inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#key{
+    width: 60px;
+}
+#nem_logo{
+    width: 100px;
+}
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 .progress-bar {
   display: flex;
@@ -479,12 +474,33 @@ section {
 =======
 #frame2 > h1{
     font-size: 20px;
+=======
+#nem_inputs > label {
+    display: flex;
+    flex-direction: column;
+}
+
+#pass{
+    padding-bottom: 50%;
+    padding-top: 20px
+}
+#payContainer{
+    background-color: #26A59A;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+}
+
+#frame2 > h1{
+ font-size: 20px;
+>>>>>>> parent of b7493e0... Added media queries for the main form-not finished yet
 }
 #frame2 > p{
     font-size: 13px;
     padding-left: 20%;
     padding-right: 20%;
 }
+<<<<<<< HEAD
 
 #icon_grid1{
     grid-area: icon1;
@@ -551,82 +567,119 @@ section {
     
 }
 >>>>>>> 7c1d99896c285fe09e840a8d6f6e8b4e0a8940fe
+=======
+>>>>>>> parent of b7493e0... Added media queries for the main form-not finished yet
 
-  #frame1 {
-    width: 95vw;
-  }
 
-  #frame0 {
+/* progress bar https://codepen.io/peruvianidol/pen/NLMvqO?page=2&fbclid=IwAR2m6DiD2ZYSh5VUVp6tmH97fjIToKZBEpQEdwr0_wTsPdRpxmU6Jx0tDcI */
+section{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-right: 20vw;
+    padding-top: 20px;
+}
+:root {
+    --color-white: #fff;
+    --color-black: #333;
+    --color-gray: #75787b;
+    --color-gray-light: #bbb;
+    --color-gray-disabled: #e8e8e8;
+    --color-green: #9BEF90;
+    --color-green-dark: #383;
+    --font-size-small: .75rem;
+    --font-size-default: .875rem;
   }
 
-  #frame0 > * {
-    padding: 5px;
-    font-weight: 300;
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    width: 80%;
   }
-
-  /*Grids */
-  section {
-    width: 75vw;
+  .progress-bar li {
+    flex: 2;
+    position: relative;
+    padding: 0 0 14px 0;
+    font-size: var(--font-size-default);
+    line-height: 1.5;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: visible;
+    min-width: 0;
+    text-align: center;
+    border-bottom: 2px solid var(--color-gray-disabled);
   }
-
-  #cards {
-    width: 85vw;
+  .progress-bar li:first-child,
+  .progress-bar li:last-child {
+    flex: 1;
   }
-  #left_card,
-  #rigth_card {
-    width: 50vw;
+  .progress-bar li:last-child {
+    text-align: right;
   }
-
-  #cards {
-    display: grid;
-    grid-column: auto;
-    grid-template-areas:
-      "left_card"
-      "rigt_card";
+  .progress-bar li:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-gray-disabled);
+    border-radius: 50%;
+    border: 2px solid rgba(19, 157, 221, 0);
+    position: absolute;
+    left: calc(50% - 6px);
+    bottom: -7px;
+    z-index: 3;
+    transition: all .2s ease-in-out;
   }
-
-  #left_card {
-    width: 70vw;
-    grid-area: left_card;
-    grid-column: 1/1;
+  .progress-bar li:first-child:before {
+    left: 0;
   }
-  #right_card {
-    width: 70vw;
-    margin-top: 5vh;
-    grid-area: right_card;
-    grid-column: 1/1;
+  .progress-bar li:last-child:before {
+    right: 0;
+    left: auto;
   }
-
-  .progress-bar {
-    margin-top: 5vh;
-    margin-bottom: 15vh;
+  .progress-bar span {
+    transition: opacity .3s ease-in-out;
   }
-
-  #cards h1 {
-    font-size: 22px;
+  .progress-bar li:not(.is-active) span {
+    opacity: 0.3;
   }
-  #cards p {
-    font-size: 12px;
+  .progress-bar .is-complete:not(:first-child):after,
+  .progress-bar .is-active:not(:first-child):after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: -50%;
+    z-index: 2;
+    border-bottom: 1px solid var(--color-green);
   }
-
-  #nem_inputs label {
-    width: 50vw;
+  .progress-bar li:last-child span {
+    width: 200%;
+    display: inline-block;
+    position: absolute;
+    left: -100%;
   }
-  #nemid {
-    width: 60vw;
-    height: 40vh;
-    margin-bottom: 2vh;
-  }
+<<<<<<< HEAD
 
   #accept {
     margin-left: 30vw;
+=======
+  
+  .progress-bar .is-complete:last-child:after,
+  .progress-bar .is-active:last-child:after {
+    width: 200%;
+    left: -100%;
   }
-  #backBtn {
-    margin-top: 4vh;
-    height: 4vh;
+  
+  .progress-bar .is-complete:before {
+    background-color: var(--color-green);
+>>>>>>> parent of b7493e0... Added media queries for the main form-not finished yet
   }
-}
+  
+  .progress-bar .is-active:before,
+  .progress-bar .is-hovered:before {
+    background-color: #26A59A;
+
+  }
