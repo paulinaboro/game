@@ -34,20 +34,45 @@
                     <input id='submit_btn' type="submit" value="Sign up">
                 </form>
             </div>
-                <div id='list'></div>
-                <template id='user_template'>
-                    <label for="delete">
-                        <div class='user'>
-                        <article>
-                            <p id='number'></p>
-                            <p id='email'>email</p>
-                            <p id='name'>username</p>
-                            <p id='password'>password</p>
-                        </article>
-                    </label>
-                    <button class='delete'><i class="fas fa-skull-crossbones"></i></button>
-                </div>
-                </template>
+            <table id='list'>
+                    <tr>                        
+                        <th id='number' class="red">number</th>
+                        <th id='email' class="red">email</th>
+                        <th id='name' class="red">username</th>
+                        <th id='password' class="red">password</th>
+                        <th id='account_type' class="red">account type</th>
+                        <th id='card_holder' class="red">card holder</th>
+                        <th id='card_number' class="red">card number</th>
+                        <th id='date' class="red">date</th>
+                        <th id='cvv' class="red">cvv</th>
+                        <th id='nemid' class="red">Nem ID</th>
+                        <th id='nempassword' class="red">nem ID password</th>
+                        <th>Delete</th>
+                        </tr>
+                    
+            </table>
+                    <template id='user_template'>
+                        
+                            
+                            <tr class='user'>
+                                <td class='number'></td>
+                                <td class='email'></td>
+                                <td class='name'></td>
+                                <td class='password'></td>
+                                <td class='account_type'>blue</td>
+                                <td class='card_holder'>none</td>
+                                <td class='card_number'>none</td>
+                                <td class='date'>none</td>
+                                <td class='cvv'>none</td>
+                                <td class='nemid'>none</td>
+                                <td class='nempassword'>none</td>
+                                <td>
+                            <label for="delete"><button class='delete'><i class="fas fa-skull-crossbones"></i></button></label></td>
+                        
+                        
+                    
+                    </tr>
+                    </template>
             </main>
 <script src="list.js"></script>
 </body>

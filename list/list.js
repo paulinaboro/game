@@ -39,9 +39,9 @@ function post(submittedData){
            alert('Email ' + data.list[0].message[0])
             } else {
                 alert(data.list[0].message[0])
-
             }
 }
+
    function get(){
     fetch('https://examproject-f5d5.restdb.io/rest/signups',{
     method: 'get',
@@ -57,15 +57,15 @@ function post(submittedData){
 }
 
 function makeList(newData){
-    document.querySelector('#list').innerHTML = '';
+    // document.querySelector('#list').innerHTML = '';
     newData.forEach((user, i)=> {
         let tmpl = document.querySelector('#user_template').content;
         let tmplCopy = tmpl.cloneNode(true);
         tmplCopy.querySelector('.user').id = 'user' + [i];
-        tmplCopy.querySelector('#number').innerHTML = [i+1] + '.';
-        tmplCopy.querySelector('#email').innerHTML = 'Email: ' + user.email;
-        tmplCopy.querySelector('#name').innerHTML = 'Username: ' +user.name;
-        tmplCopy.querySelector('#password').innerHTML = 'Password: ' +user.password;
+        tmplCopy.querySelector('.number').innerHTML = [i+1] + '.';
+        tmplCopy.querySelector('.email').innerHTML = 'Email: ' + user.email;
+        tmplCopy.querySelector('.name').innerHTML = 'Username: ' +user.name;
+        tmplCopy.querySelector('.password').innerHTML = 'Password: ' +user.password;
         tmplCopy.querySelector(`#user${i} .delete`).addEventListener('click', ()=>{
             deleteObj(user._id);
             document.querySelector(`#user${i}`).style.display = 'none';
