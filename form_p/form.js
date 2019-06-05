@@ -20,5 +20,10 @@ function post(submittedData) {
       "cache-control": "no-cache"
     },
     body: postData
+  }).then(e => e.json())
+  .then(blueData => {
+    console.log(blueData);
+    localStorage.setItem("sp.user", JSON.stringify(blueData));
+    window.location = "/spillejhornet.html";
   });
 }
