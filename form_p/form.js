@@ -20,14 +20,16 @@ function post(submittedData) {
       "cache-control": "no-cache"
     },
     body: postData
-  })
-  .then(e => e.json())
-  .then(data=>{
-     //  console.log(data.list[0].field)
 
-      if(data){
-          makeAlert(data)}
-  })
+  }).then(e => e.json())
+  .then(blueData => {
+     if(blueData){
+          makeAlert(blueData)}
+      })
+    console.log(blueData);
+    localStorage.setItem("sp.user", JSON.stringify(blueData));
+    window.location = "/spillejhornet.html";
+  });
 }
 
 function makeAlert(data){
