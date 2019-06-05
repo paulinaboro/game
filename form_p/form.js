@@ -20,10 +20,27 @@ function post(submittedData) {
       "cache-control": "no-cache"
     },
     body: postData
+
   }).then(e => e.json())
   .then(blueData => {
+    makeAlert(blueData);
     console.log(blueData);
     localStorage.setItem("sp.user", JSON.stringify(blueData));
     window.location = "/spillejhornet.html";
   });
+
 }
+
+function makeAlert(data){
+  console.log('hi')
+  console.log(data);
+  if (data.list[0].message[0] === 'Already exists'){
+      alert('Email ' + data.list[0].message[0]);
+      
+
+       }
+       else {
+           alert(data.list[0].message[0])
+       }
+}
+

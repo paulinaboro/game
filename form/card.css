@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 .container {
   perspective:500px;
@@ -228,3 +228,44 @@
 }
 
 .a{opacity:0;}.b{fill:#fff;}.c{fill:#ff5f00;}.d{fill:#eb001b;}.e{fill:#f79e1b;}
+
+
+
+
+@media screen and (max-width: 500px){
+  .paycard, .front, .back{
+    width: 330px;
+    height: 240px;
+  }
+  .card_input{
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+  .card-number{
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 960px){
+
+.paycard, .front, .back{
+  width: 350px;
+  height: 230px;
+}
+.card_input{
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.card-brand{
+  right: 10px;
+}
+
+.card-number{
+  margin-bottom: 20px;
+}
+.title{
+  font-size: 10px;
+}
+}

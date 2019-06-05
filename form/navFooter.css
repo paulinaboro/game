@@ -97,7 +97,9 @@ nav {
     .mainFooterPart2, .mainFooterPart3{
         margin-top: 2em;
         margin-bottom: 1em;
-    
+    }
+    .mainFooter{
+        margin-top: 20px;
     }
 }
 @media screen and (min-width: 600px) {

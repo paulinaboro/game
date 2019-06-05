@@ -11,7 +11,7 @@ body{
     background-color: #7D96B4;
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 
 }
 .navbar{
@@ -23,6 +23,7 @@ form{
     flex-direction: column;
     width: 15vw;
     justify-content: center;
+    display: none;
 }
 
 #form_container{
@@ -36,18 +37,6 @@ form > div{
 #submit_btn{
     width: 100px;
     margin: 10px;
-}
-
-.user{
-    display: flex;
-    flex-direction: row;
-    width: 500px;
-    justify-content: center;
-}
-
-article{
-    display: flex;
-    flex-direction: row;
 }
 
 p{
@@ -73,20 +62,33 @@ p{
     color: red;
 
 }
-
-
-#list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+.red{
+    color: red;
 }
+#list {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #list td, #list th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #list tr:nth-child(even){
+      background-color: #5F7896;
+    }
+  
+  #list tr:hover {background-color: rgb(36, 50, 88);}
+  
+  #list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:rgb(14, 14, 61);
+    color: white;
+  }
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-content: center;
-    align-items: center; */
-}
+  td, th{
+      font-size: 10px;
+  }
