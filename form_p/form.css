@@ -6,15 +6,26 @@ body {
 
 /* NEW FORM STYLING  */
 
+#mymain{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+#color{
+  color: #26a59a;
+}
+#red{
+  color: red;
+}
 #newForm {
-  margin-top: 10vh;
-  width: 35vw;
+  width: 550px;
   background-color: white;
-  margin-left: 30vw;
   text-align: center;
   color: black;
   box-shadow: 7px 9px 8px -3px rgba(171, 171, 171, 1);
   border-radius: 5px;
+  margin-top: 5vh;
 }
 
 #newForm h3 {
@@ -27,9 +38,10 @@ ul li {
   text-align: left;
   margin-left: 5vw;
 }
-#newForm #submit_btn {
+ #submit_btn {
   height: 5vh;
   width: 13vw;
+  border-radius: 1em;
   background-color: #26a59a;
   border: none;
   color: white;
@@ -94,10 +106,9 @@ ul li {
     font-size: 16px;
   }
   #newForm {
-    width: 65vw;
-    margin-top: 5vh;
+    width: 550px;
     background-color: white;
-    margin-left: 18vw;
+
   }
   #newForm label {
     font-size: 14px;
@@ -127,6 +138,10 @@ ul li {
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
-    margin: 4%;
-  }
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+
 }

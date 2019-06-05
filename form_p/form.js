@@ -20,5 +20,26 @@ function post(submittedData) {
       "cache-control": "no-cache"
     },
     body: postData
-  });
+  })
+  .then(e => e.json())
+  .then(data=>{
+     //  console.log(data.list[0].field)
+
+      if(data){
+          makeAlert(data)}
+  })
 }
+
+function makeAlert(data){
+  console.log('hi')
+  console.log(data);
+  if (data.list[0].message[0] === 'Already exists'){
+      alert('Email ' + data.list[0].message[0]);
+      
+
+       }
+       else {
+           alert(data.list[0].message[0])
+       }
+}
+
