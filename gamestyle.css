@@ -518,6 +518,7 @@
 #gameplaceholder {
   transform: scale(0.8);
   position: relative;
+  width: 100%;
 }
 #badCup {
   display: none;
@@ -534,6 +535,7 @@
   display: none;
   text-align: center;
   font-family: "Open Sans", sans-serif;
+  padding-top: 10vh;
 }
 #blur {
   background-color: rgba(0, 0, 0, 0.6);
@@ -645,7 +647,7 @@
 .instruction {
   font-size: 300%;
   position: absolute;
-  padding-top: 46%;
+  padding-top: 50%;
   left: 0%;
   width: 100%;
   font-family: "Dosis", sans-serif;
@@ -668,7 +670,7 @@
 }
 #donttouchthecup {
   color: red;
-  top: 96%;
+  top: 104%;
   padding-top: 0%;
 }
 #formbutton {

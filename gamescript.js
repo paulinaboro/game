@@ -69,15 +69,28 @@ function catching() {
     pointCounter.textContent = `${counter} points`;
     document.querySelector(
       "#congratulations"
-    ).innerHTML = `You earned ${counter} points!<br\> Exchange them to ${counter}dkk now!`;
-    document.querySelector(
-      "#formbutton"
-    ).innerHTML = `Get your ${counter} dkk now!`;
+    ).innerHTML = `You earned ${counter} points!<br\> Exchange them to ${counter *
+      10}dkk now!`;
+    document.querySelector("#formbutton").innerHTML = `Get your ${counter *
+      10} dkk now!`;
     speed = speed - 80;
     //to speed up we have to clear the existing interval and turn it on again with the new speed
     clearInterval(intv);
     //turning the game with some timeout
     clearTimeout(timertodeath);
+    timertodeath = setInterval(function() {
+      let badstrike;
+      killedCups.push(badstrike);
+      let strikes = document.querySelectorAll("[data-id]");
+      let properstrike = strikes[killedCups.length - 1];
+      properstrike.style.fill = "red";
+      document.querySelector("#bad").play();
+      document.querySelector("#nope").play();
+      if (killedCups.length === 3) {
+        endGame(counter);
+      }
+      //endGame(counter);
+    }, 40000);
     //the point appears
     document.querySelector("#onepoint").classList.add("animatingpoints");
     setTimeout(function() {
@@ -93,8 +106,17 @@ function catching() {
 
   //value for setting the interval with a certain speed to the moving
   moveCup(GoodCup);
-  timertodeath = setTimeout(function() {
-    endGame(counter);
+  timertodeath = setInterval(function() {
+    let badstrike;
+    killedCups.push(badstrike);
+    let strikes = document.querySelectorAll("[data-id]");
+    let properstrike = strikes[killedCups.length - 1];
+    properstrike.style.fill = "red";
+    document.querySelector("#bad").play();
+    document.querySelector("#nope").play();
+    if (killedCups.length === 3) {
+      endGame(counter);
+    }
   }, 40000);
   int = setInterval(moveCup, speed, GoodCup);
   //now introducing the bad cup
@@ -159,8 +181,7 @@ function screenTest(e) {
   if (e.matches) {
     /* the viewport is 500 pixels wide or less */
     //for mobile device
-
-    document.querySelector("#startone").add.classList("hidden");
+    document.querySelector("#startone").style.display = "none";
     document.querySelector("#rotateScreen").style.display = "block";
   } else {
     //for desktop
@@ -176,7 +197,7 @@ document
 
 function hideInfoAboutRotatingScreen() {
   document.querySelector("#rotateScreen").style.display = "none";
-  document.querySelector("#startone").remove.classList("hidden");
+  document.querySelector("#startone").style.display = "block";
 }
 // Rotating the screen horizontally on mobile devices
 function ready() {
