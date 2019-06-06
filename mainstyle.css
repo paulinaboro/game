@@ -7,208 +7,205 @@ yellow: #FEB700;
 
 */
 
-/*General CSS for both desktop and mobile starts here */ 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/*General CSS for both desktop and mobile starts here */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
-    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 /* CSS FOR THE FACEBOOK SITE */
-#facebookMockup{
-    width: 100vw;
-    height: auto;
+#facebookMockup {
+  width: 100vw;
+  height: auto;
 }
-.intro{
-    background-color: #CDDDEF;
-    padding: 7em;
-    text-align: center;
+.intro {
+  background-color: #cdddef;
+  padding: 7em;
+  text-align: center;
 }
-h1{
-    color: #0F3C5D;
-    font-size: 3em;
+h1 {
+  color: #0f3c5d;
+  font-size: 3em;
 }
-h2{
-    font-size: 2em;
-    color: #0F3C5D;
+h2 {
+  font-size: 2em;
+  color: #0f3c5d;
 }
-.benefits h2{
-    color: #fff;
-    text-align: center;
-    padding-top: 2em;
+.benefits h2 {
+  color: #fff;
+  text-align: center;
+  padding-top: 2em;
 }
 
-.benefitCard{
-    min-height: 450px;
-    background-color: #0F3C5D;
-    border-radius: 50px;
-    width: 300px;
-    color: #fff;
-    padding: 1em;
-    margin: 4em 2em;
+.benefitCard {
+  min-height: 450px;
+  background-color: #0f3c5d;
+  border-radius: 50px;
+  width: 300px;
+  color: #fff;
+  padding: 1em;
+  margin: 4em 2em;
 }
-.introP{
-    color: #0F3C5D;
-    margin: 2.5em 0em 2em 0em;
-    font-size: 1.5em;
+.introP {
+  color: #0f3c5d;
+  margin: 2.5em 0em 2em 0em;
+  font-size: 1.5em;
 }
-.introBtn{
-    background-color:#FEB700;
-    color: #0F3C5D;
-    width: 12em;
-    font-weight: bold;
+.introBtn {
+  background-color: #feb700;
+  color: #0f3c5d;
+  width: 12em;
+  font-weight: bold;
 }
-.introDice{
-    width: 10em;
-    height: auto;
-    display: inline;
+.introDice {
+  width: 10em;
+  height: auto;
+  display: inline;
 }
-.otherGamesBtn{
-    background-color:  #0F3C5D;
-    color: #fff;
-    border: none;
+.otherGamesBtn {
+  background-color: #0f3c5d;
+  color: #fff;
+  border: none;
 }
 /*General rules for buttons*/
-button{
-    min-width: 8em;
-    height: 3em;
-    font-size: 1em;
-    padding: 10px;
-    border-radius: 6px;
-    margin: auto;
-    display: block;
+button {
+  min-width: 8em;
+  height: 3em;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 6px;
+  margin: auto;
+  display: block;
 }
 
 /*please delete placeholder CSS once we connect the main site with the game*/
-.placeholderGame{
-    background-image: url("images/background-game-04.svg");
-    background-size: cover;
-    width: 100vw;
-    height: 80vh;  
-    background-position: center;
-    background-repeat: no-repeat;  
+.placeholderGame {
+  background-image: url("images/background-game-04.svg");
+  background-size: cover;
+  width: 100vw;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.uspBenefits{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-
+.uspBenefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.benefits{
-    background-color: #849BB4;
-    padding: 4em;
+.benefits {
+  background-color: #849bb4;
+  padding: 4em;
 }
 
 /*CSS for Spillejhornet mockup site*/
-main{
-    background-color:  #5F7896;
+main {
+  background-color: #5f7896;
 }
 
-.mediumGame{
-    width: auto;
-    height: 300px;
-    margin: 2em;
-    -webkit-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 5px 9px 0px rgba(0,0,0,0.75);
+.mediumGame {
+  width: auto;
+  height: 300px;
+  margin: 2em;
+  -webkit-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.75);
 }
-.selectedGames{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #5F7896;
-
+.selectedGames {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #5f7896;
 }
-.allGames{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 4em; 
+.allGames {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 4em;
 }
-.filterBar{
-    height: 5em;
-    background-color: #376c8f;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    color: #fff;
-    align-items: center;
+.filterBar {
+  height: 5em;
+  background-color: #376c8f;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: #fff;
+  align-items: center;
 }
-.filterBtn{
-    justify-content: center;
-    background-color: #5F7896;
-    color: #fff;
-    border: none;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+.filterBtn {
+  justify-content: center;
+  background-color: #5f7896;
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.filterP{
-    margin-left: 2em;
+.filterP {
+  margin-left: 2em;
 }
-#spilleSearch{
-    min-width: 8em;
-    height: 3em;
-    font-size: 1em;
-    padding: 10px;
-    border-radius: 6px;
-    margin-right: 4em;
+#spilleSearch {
+  min-width: 8em;
+  height: 3em;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 4em;
 }
-.spilleHeader{
-    color: #fff;
-    margin: 4em 5em 2em 6em;
+.spilleHeader {
+  color: #fff;
+  margin: 4em 5em 2em 6em;
 }
-.mainGameImg{
-    width: 90vw;
-    height: auto;
-    display: block;
-    margin: auto;
+.mainGameImg {
+  width: 90vw;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 /* CSS for Mobile starts here*/
-@media screen and (max-width: 500px){
-.intro{
+@media screen and (max-width: 500px) {
+  .intro {
     padding: 4em 1em;
-}
-h1{
+  }
+  h1 {
     font-size: 2em;
-}
-h2{
+  }
+  h2 {
     font-size: 1.5em;
-}
-.introDice{
+  }
+  .introDice {
     width: 5em;
     height: auto;
-}
-.benefits{
+  }
+  .benefits {
     padding: 4em 1em;
-}
+  }
 
-/* CSS or the spillejhornet site for MOBILE */
-.spilleHeader{
-   text-align: center;
-   margin: 3em 0em 2em 0em;
-}
-.filterBar{
+  /* CSS or the spillejhornet site for MOBILE */
+  .spilleHeader {
+    text-align: center;
+    margin: 3em 0em 2em 0em;
+  }
+  .filterBar {
     height: 250px;
     display: block;
     margin: auto;
     padding: 1em;
-}
-.filterBtn{
+  }
+  .filterBtn {
     margin-top: 1em;
-}
-#spilleSearch{
+  }
+  #spilleSearch {
     margin: auto;
     display: block;
     margin-top: 1em;
-}}
+  }
+}
 /* CSS for Desktop starts here*/
- @media screen and (min-width: 600px) {
-
-} 
+@media screen and (min-width: 600px) {
+}

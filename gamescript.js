@@ -52,7 +52,7 @@ function catching() {
   let GoodCup = document.querySelector("#CupForCounting");
   let BadCup = document.querySelector("#badCup");
   let intv;
-  let speed = 3000;
+  let speed = 1000;
   let killedCups = [];
   let counter = 0;
   let timertodeath;
@@ -112,7 +112,7 @@ function moveCup(GoodCup) {
 function badCupFunctionality(killedCups, clone, counter) {
   clone.style.display = "block";
   //I am reusing the same function for moving the cup but just with different values and one set speed
-  setInterval(moveCup, 2800, clone);
+  setInterval(moveCup, 1000, clone);
   clone.addEventListener("click", () => {
     //instead of counting clicks we have to create the array and pushed every clicked clone into that. it's because
     //the counter gets reseted with every clone, because it is counting a click to this particular clone, not globally
@@ -148,4 +148,44 @@ function endGame(counter) {
   document.querySelector("#replay").addEventListener("click", () => {
     location.reload();
   });
+}
+
+//ROTATE MOBILE SECTION
+
+//Showing the rotateScreen div only on mobile devices
+let mql = window.matchMedia("(max-width: 500px)");
+
+function screenTest(e) {
+  if (e.matches) {
+    /* the viewport is 500 pixels wide or less */
+    //for mobile device
+
+    document.querySelector("#startone").add.classList("hidden");
+    document.querySelector("#rotateScreen").style.display = "block";
+  } else {
+    //for desktop
+    document.querySelector("#rotateScreen").style.display = "none";
+  }
+}
+mql.addListener(screenTest);
+
+document.getElementById("rotateButton").addEventListener("click", start);
+document
+  .getElementById("rotateButton")
+  .addEventListener("click", hideInfoAboutRotatingScreen);
+
+function hideInfoAboutRotatingScreen() {
+  document.querySelector("#rotateScreen").style.display = "none";
+  document.querySelector("#startone").remove.classList("hidden");
+}
+// Rotating the screen horizontally on mobile devices
+function ready() {
+  const { type } = screen.orientation;
+  console.log(`Fullscreen and locked to ${type}. Ready!`);
+}
+
+async function start() {
+  await document.body.requestFullscreen();
+  await screen.orientation.lock("landscape");
+  ready();
 }

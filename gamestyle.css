@@ -693,3 +693,48 @@
   border: none;
   cursor: pointer;
 }
+
+#rotateScreen {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+/* CSS for Mobile starts here*/
+@media screen and (max-width: 500px) {
+  /*Rotate mobile*/
+  .hidden {
+    display: none;
+  }
+  #rotateScreen {
+    background-color: #0f3c5d;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0vh;
+    left: 0vw;
+    z-index: 8;
+    display: block;
+  }
+  #rotateScreen p {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  #rotateButton {
+    width: 50px;
+    height: 50px;
+    background-color: #feb700;
+    font-size: 32px;
+    style-decoration: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 40%;
+    -webkit-box-shadow: 1px 0px 13px 1px #ffffff;
+    box-shadow: 1px 0px 13px 1px #ffffff;
+  }
+}
