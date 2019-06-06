@@ -6,7 +6,7 @@
     margin: 0px 20px 0px 20px;
 
 }
-nav {
+nav, #formNav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,12 +38,10 @@ nav {
 }
 .danskeLogo{
   height: 1.5em;
-
 }
 .footerBtn{
     background-color: #fff;
     color: #0F3C5D;
-    font-weight: bold;
     width: 15em;
     margin-top: 2em;
     margin-left: -0.3em;
@@ -97,11 +95,16 @@ nav {
     height: 0%;
 }
 @media screen and (max-width: 665px){
-nav{
+nav, #formNav{
     height: 4em;
     display: flex;
     flex-direction: row;
     background-color: #7397b7;
+}
+#Layer_1{
+    width: 40px;
+    height: auto;
+    margin-left: 10px;
 }
 .upperMobileNav{
     display: flex;
@@ -114,7 +117,11 @@ nav{
 
 #danskeLogoMobile{
     height: 4em;
- /*   margin: 0.5em; */
+    padding: 0.5em;
+    cursor: pointer;
+}
+#danskeLogoMobileForm{
+    height: 2.5em;
     padding: 0.5em;
     cursor: pointer;
 }
@@ -194,14 +201,20 @@ nav{
     display: none;
 }
 
-.mainFooterPart2 li, .mainFooterPart3 li{
-        margin-left: -3em;
-       
-}
 .mainFooterPart2, .mainFooterPart3{
         margin-top: 2em;
         margin-bottom: 1em;
     
+}
+.mainFooterPart2 li .navA, .mainFooterPart3 li .navA{
+    margin-left: -40px;
+}
+.footerBtn{
+    font-weight: normal;
+}
+.mobileAvatar{
+    margin-top: 10px;
+    margin-left: 50px;
 }
 }
 /* IPAD VERSION */
@@ -240,6 +253,9 @@ display: none;
 }
 .mainFooterPart4{
         grid-column: 4 / 5;
+}
+.footerBtn{
+    font-weight: normal;
 }
 }
 /* DESKTOP VERSION */

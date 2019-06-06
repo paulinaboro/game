@@ -34,13 +34,13 @@ function post(submittedData) {
 function makeAlert(data){
   console.log('hi')
   console.log(data);
-  if (data.list[0].message[0] === 'Already exists'){
+/*   if (data.list[0].message[0] === 'Already exists'){
       alert('Email ' + data.list[0].message[0]);
       
 
        }
        else {
            alert(data.list[0].message[0])
-       }
+       } */
 }
 
