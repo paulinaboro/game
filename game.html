@@ -6,11 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>game</title>
     <link rel="stylesheet" type="text/css" href="gamestyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div id="gameplaceholder">
       <div id="blur2"></div>
       <div id="backgroundmodal"></div>
+      <div id="rotateScreen">
+        <p>Rotate screen to play game</p>
+        <button id="rotateButton">
+          <i id="rotateIcon" class="fas fa-undo"></i>
+        </button>
+      </div>
       <div id="startone">
         <p class="instruction" id="collectthecup">
           Collect the green cup before it moves
@@ -22,8 +34,7 @@
       <div id="blur"></div>
       <div id="endgamemodal">
         <p id="congratulations">
-          Congratulations! You earned all the fucking points in the world, now
-          you can go fuck yourself!
+          Congratulations! That was a good game!
         </p>
         <p id="youremail">Enter e-mail address to get your <b>money</b></p>
         <input id="emailgameinput" type="text" /><br />

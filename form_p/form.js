@@ -23,13 +23,12 @@ function post(submittedData) {
 
   }).then(e => e.json())
   .then(blueData => {
-     if(blueData){
-          makeAlert(blueData)}
-      })
+    makeAlert(blueData);
     console.log(blueData);
     localStorage.setItem("sp.user", JSON.stringify(blueData));
     window.location = "/spillejhornet.html";
   });
+
 }
 
 function makeAlert(data){

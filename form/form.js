@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", init);
 
-
 function init() {
   let status = 1;
   console.log(status)
@@ -105,8 +104,37 @@ function get(redInputData){
     });
 }
 
+
   // post function coming here
 }
+
+
+
+// Media queries 
+window.addEventListener("resize", mediaQueires)
+let x = window.matchMedia("(max-width: 500px)")
+mediaQueires()
+function mediaQueires() {
+  if (x.matches) { // If media query matches
+    console.log('width matches')
+    document.querySelector('#account_set').classList.remove('current');
+    document.querySelector('#gear').classList.remove('current');
+    document.querySelector('#inner_div').style.display = 'none';
+
+    document.querySelector('#account_set').addEventListener('click', ()=> {
+      document.querySelector('#side_nav').style.display = 'none';
+      document.querySelector('#inner_div').style.display = 'flex';
+    })
+  } 
+  else{
+    console.log('width does not match')
+    document.querySelector('#side_nav').style.display = 'flex';
+    document.querySelector('#inner_div').style.display = 'flex';
+    document.querySelector('#account_set').classList.add('current');
+    document.querySelector('#gear').classList.add('current');
+    document.querySelector('#account_set').removeEventListener
+  }
+
 
 // Then I post the new redInputData to the database using the userId -- not working
 function post(currUserData, redInputData) {
@@ -151,4 +179,5 @@ function mediaQueires() {
     document.querySelector('#gear').classList.add('current');
     document.querySelector('#account_set').removeEventListener
   }
+
 
