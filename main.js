@@ -21,7 +21,7 @@ menuBtn.addEventListener("click", openNav);
 function openNav() {
 //  document.querySelector(".upperMobileNav").classList.remove = "hidden";
 //  document.querySelector("#mobileNav.overlay").classList.remove = "hidden";
-  document.getElementById("mobileNav").style.height = "85%";
+  document.getElementById("mobileNav").style.height = "80%";
   document.querySelector(".menuBtn").style.display = "none";
 }
 
