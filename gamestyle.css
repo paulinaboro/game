@@ -673,7 +673,7 @@
   top: 104%;
   padding-top: 0%;
 }
-#formbutton {
+.formbutton {
   width: 11.8em;
   height: 2.2em;
   border: none;
@@ -726,17 +726,12 @@
   }
 
   #rotateButton {
+    min-width: 50px;
     width: 50px;
     height: 50px;
-    background-color: #feb700;
-    font-size: 32px;
-    style-decoration: none;
-    border: none;
-    text-align: center;
     cursor: pointer;
-    border-radius: 5px;
-    margin-left: 40%;
-    -webkit-box-shadow: 1px 0px 13px 1px #ffffff;
-    box-shadow: 1px 0px 13px 1px #ffffff;
+  }
+  #startone {
+    display: none;
   }
 }
