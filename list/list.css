@@ -58,22 +58,21 @@ p {
   cursor: pointer;
   color: red;
 }
-
+/* 
 #list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-}
+} */
 
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-content: center;
-    align-items: center; */
 }
+
 .red {
   color: red;
 }

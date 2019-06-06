@@ -25,16 +25,9 @@ function post(submittedData) {
     .then(data => {
       //  console.log(data.list[0].field)
       get(data);
+    })
+  } get();
 
-   function makeAlert(data){
-       console.log('hi')
-       console.log(data);
-       if (data.list[0].message[0] === 'Already exists'){
-           alert('Email ' + data.list[0].message[0])
-            } else {
-                alert(data.list[0].message[0])
-            }
-}
 
    function get(){
     fetch('https://examproject-f5d5.restdb.io/rest/signups',{
@@ -56,13 +49,34 @@ function makeList(newData){
         let tmplCopy = tmpl.cloneNode(true);
         tmplCopy.querySelector('.user').id = 'user' + [i];
         tmplCopy.querySelector('.number').innerHTML = [i+1] + '.';
-        tmplCopy.querySelector('.email').innerHTML = 'Email: ' + user.email;
-        tmplCopy.querySelector('.name').innerHTML = 'Username: ' +user.name;
-        tmplCopy.querySelector('.password').innerHTML = 'Password: ' +user.password;
+        tmplCopy.querySelector('.email').innerHTML =  user.email;
+        tmplCopy.querySelector('.name').innerHTML =  user.name;
+        tmplCopy.querySelector('.password').innerHTML = user.password;
         tmplCopy.querySelector(`#user${i} .delete`).addEventListener('click', ()=>{
             deleteObj(user._id);
             document.querySelector(`#user${i}`).style.display = 'none';
         })
+        if(user.account_type){
+          tmplCopy.querySelector('.account_type').innerHTML = user.account_type;
+        } 
+        if(user.card_holder){
+          tmplCopy.querySelector('.card_holder').innerHTML = user.card_holder;
+        }
+        if(user.card_number){
+          tmplCopy.querySelector('.card_number').innerHTML = user.card_number;
+        }
+        if(user.date){
+          tmplCopy.querySelector('.date').innerHTML = user.date;
+        }
+        if(user.cvv){
+          tmplCopy.querySelector('.cvv').innerHTML = user.cvv;
+        }
+        if(user.nemid){
+          tmplCopy.querySelector('.nemid').innerHTML = user.nemid;
+        }
+        if(user.nempassword){
+          tmplCopy.querySelector('.nempassword').innerHTML = user.nempassword;
+        }
 
     document.querySelector("#list").appendChild(tmplCopy);
   });
