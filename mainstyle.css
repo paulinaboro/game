@@ -84,8 +84,8 @@ button {
 .placeholderGame {
   /* background-image: url("images/background-game-04.svg"); */
   background-size: cover;
-  width: 100vw;
-  height: 88vh;
+  /* width: 100vw;
+  height: 88vh; */
   background-position: center;
   background-repeat: no-repeat;
 }
