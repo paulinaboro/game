@@ -32,23 +32,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+
+<!-- header here -->
+    <header>
+    </header>
+    <main id='mymain'>
     <!-- New Form -->
     <form id="newForm">
-      <br />
+
 
       <h3>Blue account</h3>
 
       <div class="row">
-        <div class="input-field inline">
-          <input
-            name="email"
-            id="email"
-            type="email"
-            class="validate"
-            required
-          />
-          <label for="email">E-mail*</label>
-        </div>
+          <div class="input-field inline">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+              <span class="helper-text" data-error="not a valid email" data-success="Correct email, good job! "></span>
+            </div>
       </div>
       <div class="row">
         <div class="input-field inline">
@@ -79,16 +79,7 @@
         <li>
           <label>
             <input class="checkbox" type="checkbox" required />
-            <span><p>I am over 18 year old*</p></span>
-          </label>
-        </li>
-
-        <li>
-          <label>
-            <input class="checkbox" type="checkbox" required />
-            <span style="color: #26A59A"
-              ><p>I agree to the terms and conditions*</p></span
-            >
+            <span>I am over 18 year old</span><span id="red">  *</span>
           </label>
         </li>
 
@@ -96,10 +87,19 @@
           <label>
             <input class="checkbox" type="checkbox" required />
             <span
-              ><p>
+              >I agree to the <span id="color">terms and conditions*</span></span
+            ><span id="red">  *</span>
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input class="checkbox" type="checkbox" required />
+            <span
+              >
                 I want to receive Danske Spill special deals and hear about
                 exciting new on my email
-              </p></span
+              </span
             >
           </label>
         </li>
@@ -109,7 +109,12 @@
       <p>Already have a account? <span style="color: #26A59A">Log in</span></p>
       <br />
     </form>
+  </main>
 
+  <!-- footer here -->
+  <footer>
+
+  </footer>
     <script
       type="text/javascript"
       src="node_modules/materialize-css/dist/js/materialize.min.js"

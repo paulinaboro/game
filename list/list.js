@@ -26,25 +26,19 @@ function post(submittedData) {
       //  console.log(data.list[0].field)
       get(data);
 
-      if (data) {
-        makeAlert(data);
-      }
-    });
+   function makeAlert(data){
+       console.log('hi')
+       console.log(data);
+       if (data.list[0].message[0] === 'Already exists'){
+           alert('Email ' + data.list[0].message[0])
+            } else {
+                alert(data.list[0].message[0])
+            }
 }
-get();
 
-function makeAlert(data) {
-  console.log("hi");
-  console.log(data);
-  if (data.list[0].message[0] === "Already exists") {
-    alert("Email " + data.list[0].message[0]);
-  } else {
-    alert(data.list[0].message[0]);
-  }
-}
-function get() {
-  fetch("https://examproject-f5d5.restdb.io/rest/signups", {
-    method: "get",
+   function get(){
+    fetch('https://examproject-f5d5.restdb.io/rest/signups',{
+    method: 'get',
     headers: {
       "Content-Type": "application/json; charset=utf-8",
       "x-apikey": "5ce3e85d780a473c8df5ca43",
@@ -55,23 +49,20 @@ function get() {
     .then(newData => makeList(newData));
 }
 
-function makeList(newData) {
-  document.querySelector("#list").innerHTML = "";
-  newData.forEach((user, i) => {
-    let tmpl = document.querySelector("#user_template").content;
-    let tmplCopy = tmpl.cloneNode(true);
-    tmplCopy.querySelector(".user").id = "user" + [i];
-    tmplCopy.querySelector("#number").innerHTML = [i + 1] + ".";
-    tmplCopy.querySelector("#email").innerHTML = "Email: " + user.email;
-    tmplCopy.querySelector("#name").innerHTML = "Username: " + user.name;
-    tmplCopy.querySelector("#password").innerHTML =
-      "Password: " + user.password;
-    tmplCopy
-      .querySelector(`#user${i} .delete`)
-      .addEventListener("click", () => {
-        deleteObj(user._id);
-        document.querySelector(`#user${i}`).style.display = "none";
-      });
+function makeList(newData){
+    // document.querySelector('#list').innerHTML = '';
+    newData.forEach((user, i)=> {
+        let tmpl = document.querySelector('#user_template').content;
+        let tmplCopy = tmpl.cloneNode(true);
+        tmplCopy.querySelector('.user').id = 'user' + [i];
+        tmplCopy.querySelector('.number').innerHTML = [i+1] + '.';
+        tmplCopy.querySelector('.email').innerHTML = 'Email: ' + user.email;
+        tmplCopy.querySelector('.name').innerHTML = 'Username: ' +user.name;
+        tmplCopy.querySelector('.password').innerHTML = 'Password: ' +user.password;
+        tmplCopy.querySelector(`#user${i} .delete`).addEventListener('click', ()=>{
+            deleteObj(user._id);
+            document.querySelector(`#user${i}`).style.display = 'none';
+        })
 
     document.querySelector("#list").appendChild(tmplCopy);
   });
