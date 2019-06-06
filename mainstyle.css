@@ -82,10 +82,10 @@ button {
 
 /*please delete placeholder CSS once we connect the main site with the game*/
 .placeholderGame {
-  background-image: url("images/background-game-04.svg");
+  /* background-image: url("images/background-game-04.svg"); */
   background-size: cover;
   width: 100vw;
-  height: 80vh;
+  height: 88vh;
   background-position: center;
   background-repeat: no-repeat;
 }
