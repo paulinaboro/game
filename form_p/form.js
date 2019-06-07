@@ -26,7 +26,7 @@ function post(submittedData) {
     makeAlert(blueData);
     console.log(blueData);
     localStorage.setItem("sp.user", JSON.stringify(blueData));
-    window.location = "/spillejhornet.html";
+    window.location = "../spillejhornet.html";
   });
 
 }
