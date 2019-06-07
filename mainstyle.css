@@ -167,6 +167,10 @@ main {
   display: block;
   margin: auto;
 }
+
+#linkToEmail {
+  text-decoration: none;
+}
 /* CSS for Mobile starts here*/
 @media screen and (max-width: 500px) {
   .intro {
