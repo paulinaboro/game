@@ -673,6 +673,10 @@
   top: 104%;
   padding-top: 0%;
 }
+
+.hidden {
+  display: none;
+}
 .formbutton {
   width: 11.8em;
   height: 2.2em;
