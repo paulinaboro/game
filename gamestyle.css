@@ -665,7 +665,7 @@
 #emailgameinput {
   left: 30%;
   width: 20em;
-  height: 3em;
+  height: 50px;
   border: #feb700 0.6em solid;
 }
 #donttouchthecup {
@@ -702,6 +702,63 @@
 .hidden {
   display: none;
 }
+
+#skipButton {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #feb700;
+  font-weight: bold;
+}
+
+#skipGameModal {
+  display: none;
+  background-image: linear-gradient(#f3f3f3, #ffffff);
+  border: 1px solid #26a59a;
+  border-radius: 8px;
+  position: absolute;
+  width: 50vw;
+  height: 70vh;
+  top: 15vh;
+  left: 25vw;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 10vh;
+}
+#envelop {
+  width: 150px;
+}
+.left_arrow {
+  color: #0f3c5d;
+  font-size: 42px;
+  padding: 20px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.pSkip {
+  font-size: 20px;
+  color: #0f3c5d;
+}
+
+#closeSkipModal {
+  color: #0f3c5d;
+  font-size: 42px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+.formbtn1 {
+  color: #0f3c5d;
+  height: 50px;
+}
+
+#congratulations1 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #0f3c5d;
+}
+
 /* CSS for Mobile starts here*/
 @media screen and (max-width: 500px) {
   /*Rotate mobile*/

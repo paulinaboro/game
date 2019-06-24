@@ -1,6 +1,44 @@
 //loading DOM
 window.addEventListener("DOMContentLoaded", loadSVG);
 
+//Skipping the game while clicking the skip button
+// document
+//   .querySelector("#skipButtton")
+//   .addEventListener("click", showSkipTheGameModal);
+
+document
+  .querySelector("#skipButton")
+  .addEventListener("click", showSkipTheGameModal);
+
+function showSkipTheGameModal() {
+  console.log("skip btn on");
+  document.querySelector("#skipGameModal").style.display = "block";
+  document.querySelector("#startone").style.display = "none";
+  document.querySelector("#startwo").style.display = "none";
+  document.querySelector("#music").pause();
+
+  // document.querySelector("#backgroundmodal").style.display = "none";
+
+  // document.querySelector("#music").pause();
+  // document.querySelector("#blur").style.display = "none";
+  // document.querySelector("#endgamemodal").style.display = "none";
+
+  //replay functionality
+  // document.querySelector("#replay").addEventListener("click", () => {
+  //   location.reload();
+}
+
+// function endGame(counter) {
+//   //also enough of the got music
+//   document.querySelector("#music").pause();
+//   document.querySelector("#blur").style.display = "block";
+//   document.querySelector("#endgamemodal").style.display = "block";
+//   //replay functionality
+//   document.querySelector("#replay").addEventListener("click", () => {
+//     location.reload();
+//   });
+// }
+
 function loadSVG() {
   fetch("background1.svg")
     .then(response => response.text())
