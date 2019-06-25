@@ -6,14 +6,11 @@ document
   .querySelector("#skipButton")
   .addEventListener("click", showSkipTheGameModal);
 
-let skipButton = document.querySelector("#skipButton");
-
 function showSkipTheGameModal() {
   document.querySelector("#music").pause();
   document.querySelector("#skipGameModal").style.display = "block";
   document.querySelector("#startone").style.display = "none";
   document.querySelector("#startwo").style.display = "none";
-  skipButton.classList.add("hidden");
 }
 
 function loadSVG() {
